@@ -27,7 +27,7 @@ The openEHR MongoDB project addresses the limitations of traditional relational 
 
 ## Folder Structure
 
-```plaintext
+``plaintext
 .
 ├── enriched_output        # Folder for storing enriched JSON files
 ├── output                 # Folder for storing generated synthetic compositions
