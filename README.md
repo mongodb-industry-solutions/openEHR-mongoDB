@@ -27,7 +27,7 @@ The openEHR MongoDB project addresses the limitations of traditional relational 
 
 ## Folder Structure
 
-``plaintext
+```plaintext
 .
 ├── enriched_output        # Folder for storing enriched JSON files
 ├── output                 # Folder for storing generated synthetic compositions
@@ -42,7 +42,7 @@ The openEHR MongoDB project addresses the limitations of traditional relational 
 ├── 3_uploadToMongoDB.py   # Script to upload enriched compositions to MongoDB
 ├── config.json            # Configuration file for schemas and database details
 └── README.md              # Documentation
-
+```
 ---
 
 ## Scripts and Usage
@@ -50,9 +50,9 @@ The openEHR MongoDB project addresses the limitations of traditional relational 
 ### 1. **Generate Synthetic Compositions**
 Generates synthetic clinical compositions based on predefined schemas.
 
-``python
+```python
 python 1_generateSyntheticCompositions.py
-``
+```
 
 - **Input:** `schemas/` folder and `config.json`.
 - **Output:** JSON files saved to the `output/` folder.
@@ -65,9 +65,9 @@ Enriches generated compositions with:
 - Relationships (`RelatedTo`).
 - Enriched metadata (`EnrichedData`).
 
-``python
+```python
 python 2_enrichParams.py
-``
+```
 
 - **Input:** JSON files from `output/`.
 - **Output:** Enriched JSON files saved to `enriched_output/`.
@@ -77,9 +77,9 @@ python 2_enrichParams.py
 ### 3. **Upload to MongoDB**
 Uploads enriched compositions to a MongoDB collection.
 
-``python
+```python
 python 3_uploadToMongoDB.py
-``
+```
 
 - **Environment Variable:** `MONGO_URI` (MongoDB connection string).
 - **Input:** JSON files from `enriched_output/`.
@@ -108,7 +108,7 @@ The `config.json` file specifies:
 
 Example:
 
-``json
+```json
 {
   "ehrID_suffix": "ehr_",
   "ehrID_range": 1000,
@@ -120,7 +120,7 @@ Example:
   "database_name": "openEHR",
   "collection_name": "compositions"
 }
-``
+```
 
 ---
 
@@ -129,9 +129,9 @@ Example:
 - **Python** (>= 3.8)
 - **MongoDB Atlas** or a local MongoDB instance
 - Required Python packages:
-  ``bash
+  ```bash
   pip install faker pymongo bson
-  ``
+  ```
 
 ---
 
