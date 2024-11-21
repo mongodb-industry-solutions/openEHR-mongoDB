@@ -1,0 +1,17 @@
+{
+    "schemas": {
+        "minimal_evaluation": "schemas/minimal_evaluation.json",
+        "Corona_composition": "schemas/Corona_composition.json",
+        "Immunization_composition": "schemas/Ex1_Composition_Immunitzacio.json",
+        "Laboratory_composition": "schemas/Ex1_Composition_Laboratori.json",
+        "Laboratory_composition_short": "schemas/Ex1_Composition_Laboratori_Short.json",
+        "virology_finding_with_specimen": "schemas/virology_finding_with_specimen.json",
+        "obs_inst": "schemas/obs_inst.json",
+        "minimal_observation": "schemas/minimal_observation.json"
+    },
+    "ehrID_suffix": "ehr_",
+    "ehrID_range": 2000,
+    "num_documents": 1000,
+    "database_name": "hc_openehr",
+    "collection_name": "compositions"
+}

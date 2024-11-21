@@ -1,0 +1,134 @@
+1. Simple Query: Retrieve All Laboratory Test Results
+
+Retrieve the names and magnitudes of all laboratory test results across instances.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[at0001]/value/magnitude AS test_result,
+    c/items[at0003]/items[at0001]/value/units AS result_unit
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+
+
+2. Filtered Query: Tests Exceeding Normal Range
+
+Retrieve all test results where the magnitude exceeds the upper bound of the normal range.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[at0001]/value/magnitude AS test_result,
+    c/items[at0003]/items[at0001]/value/units AS result_unit
+FROM
+    EHR e[ehr_id/value = 'ehr_2']
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+WHERE
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value = 'GLUCOSA; C.SUBST. (sèrum)'
+
+
+3. Specific Patient and Test Filter
+
+Retrieve glucose test results for a specific patient.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[at0001]/value/magnitude AS test_result,
+    c/items[at0003]/items[at0001]/value/units AS result_unit
+FROM
+    EHR e[ehr_id/value = 'ehr_2']
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+WHERE
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value = 'GLUCOSA; C.SUBST. (sèrum)'
+
+
+4. Aggregated Query: Count of Each Test Type
+
+Count how many times each test type (e.g., glucose, cholesterol) appears in the dataset.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    COUNT(*) AS test_count
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+GROUP BY
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value
+
+
+
+5. Nested Data: Retrieve Specimen Information
+
+Retrieve specimen collection date and associated test names.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[openEHR-EHR-CLUSTER.specimen.v1]/items[at0015]/value/value AS collection_date
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+
+
+6. Cross-Section Data: Results and Diagnoses
+
+Retrieve laboratory test results alongside their associated diagnoses.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[at0001]/value/magnitude AS test_result,
+    d/data[at0001]/items[at0002]/value/value AS diagnosis
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS (
+        OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1] AND
+        EVALUATION d[openEHR-EHR-EVALUATION.problem_diagnosis.v1]
+    )
+
+
+7. Advanced Query: Lab Results with Feeder Audit
+
+Retrieve laboratory results along with their feeder audit identifiers.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[at0001]/value/magnitude AS test_result,
+    f/originating_system_item_ids[id/value] AS originating_ids
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+    CONTAINS FEEDER_AUDIT f
+
+
+
+8. Retrieve Tests by Date Range
+
+Retrieve tests collected between specific dates.
+
+SELECT
+    o/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value AS test_name,
+    c/items[at0003]/items[at0001]/value/magnitude AS test_result
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
+    CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]
+WHERE
+    c/items[at0003]/items[openEHR-EHR-CLUSTER.specimen.v1]/items[at0015]/value/value >= '2014-11-20T00:00:00'
+    AND c/items[at0003]/items[openEHR-EHR-CLUSTER.specimen.v1]/items[at0015]/value/value <= '2015-01-23T23:59:59'
+
+
+
+9. Retrieve URL for Lab Documents
+
+Retrieve the URLs of documents linked to laboratory results.
+
+SELECT
+    c/items[at0001]/items[at0010]/value/value AS document_url
+FROM
+    EHR e
+    CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]
