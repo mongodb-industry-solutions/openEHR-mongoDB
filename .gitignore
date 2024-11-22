@@ -1,0 +1,6 @@
+# Exclude output and enriched_output folders
+output/
+enriched_output/
+
+# Exclude macOS system files
+.DS_Store

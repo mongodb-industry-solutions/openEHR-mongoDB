@@ -18,7 +18,7 @@ The openEHR MongoDB project addresses the limitations of traditional relational 
 
 ## Features
 
-- **Synthetic Data Generation:** Generate realistic clinical compositions based on predefined schemas using `Faker` and MongoDB's `ObjectId`.
+- **Synthetic Data Generation:** Generate realistic clinical compositions based on predefined schemas using `Faker` 
 - **Data Enrichment:** Enrich generated compositions with additional metadata, search parameters, and AQL-mapped fields.
 - **MongoDB Upload:** Upload enriched compositions to a MongoDB database for querying and analysis.
 - **Hybrid Data Representation:** Combines canonical JSON and flattened data to support efficient queries while maintaining semantic integrity.
