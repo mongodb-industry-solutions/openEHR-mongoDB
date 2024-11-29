@@ -108,6 +108,7 @@ def process_folder(folder_path, output_folder):
             print(f"Processed and saved: {filename}")
 
 
+# Example usage
 input_folder = "./output" 
 output_folder = "./enriched_output" 
 process_folder(input_folder, output_folder)

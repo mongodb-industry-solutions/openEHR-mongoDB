@@ -1,0 +1,76 @@
+{
+  "modelVersion" : 1,
+  "sources" : [ {
+    "sourceType" : "repository",
+    "id" : "hc3-defi-7mj",
+    "user" : "pascualseguraana@gmail.com@google",
+    "repositoryId" : "hc3-defi-7mj"
+  } ],
+  "entries" : [ {
+    "path" : "Templates/HC3 Immunization List v0.5.t.json",
+    "type" : "template",
+    "id" : "HC3 Immunization List v0.5",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-02-13T13:59:47.134Z",
+    "dependsOn" : [ {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.xds_metadata.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.medication.v2"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-ACTION.medication.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-COMPOSITION.vaccination_list.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-SECTION.immunisation_list.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.admin_salut.v0"
+    } ]
+  }, {
+    "path" : "Templates/HC3 Immunization List v0.5.opt",
+    "type" : "opt",
+    "id" : "HC3 Immunization List v0.5",
+    "lastModified" : "2024-02-13T13:59:47.134Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.xds_metadata.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.xds_metadata.v0",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-01-29T09:40:41.218Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.medication.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.medication.v2",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-02-13T11:38:18.637Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-ACTION.medication.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ACTION.medication.v1",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-02-13T11:38:18.637Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-COMPOSITION.vaccination_list.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-COMPOSITION.vaccination_list.v0",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-02-13T11:38:18.637Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-SECTION.immunisation_list.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-SECTION.immunisation_list.v0",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-02-13T11:38:18.637Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.admin_salut.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.admin_salut.v0",
+    "sourceId" : "hc3-defi-7mj",
+    "lastModified" : "2024-01-29T09:40:41.214Z"
+  } ]
+}

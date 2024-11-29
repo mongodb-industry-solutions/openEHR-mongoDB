@@ -1,0 +1,1827 @@
+{
+    "meta": {
+        "_type": "RESULTSET",
+        "_schema_version": "1.0.3",
+        "_created": "2024-11-26T16:41:24.316532641+01:00",
+        "_executed_aql": "SELECT c/feeder_audit AS sisOrigenIds, c/uid/value AS compositionid, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/time/value AS dataAdmin, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[at0020]/value/defining_code/code_string AS codiImmunitzacio, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0132]/value AS codiMarcaComercial, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0150]/value/value AS numLot, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/other_participations/performer AS dadesProfessional, c/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]/items[at0014]/value/defining_code/code_string AS codiCentrePublicador, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/provider/identifiers/id AS origenInformacio, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/ism_transition/current_state AS estat, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[at0021] AS reason FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.vaccination_list.v0] WHERE e/ehr_id/value = '5b9cb35e-d7ab-4ef3-8869-9bd9ee432301' LIMIT 100",
+        "default-limit": 100,
+        "fetch": 100,
+        "max-fetch": 1000,
+        "max-limit": 1000,
+        "offset": 0,
+        "resultsize": 19
+    },
+    "q": "select c/feeder_audit AS sisOrigenIds, c/uid/value AS compositionid, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/time/value AS dataAdmin, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[at0020]/value/defining_code/code_string AS codiImmunitzacio, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0132]/value AS codiMarcaComercial, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0150]/value/value AS numLot, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/other_participations/performer AS dadesProfessional, c/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]/items[at0014]/value/defining_code/code_string AS codiCentrePublicador, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/provider/identifiers/id as origenInformacio, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/ism_transition/current_state AS estat, c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[at0021] AS reason  FROM EHR e contains COMPOSITION c[openEHR-EHR-COMPOSITION.vaccination_list.v0] WHERE e/ehr_id/value='5b9cb35e-d7ab-4ef3-8869-9bd9ee432301' LIMIT 100",
+    "columns": [
+        {
+            "path": "c/feeder_audit",
+            "name": "sisOrigenIds"
+        },
+        {
+            "path": "c/uid/value",
+            "name": "compositionid"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/time/value",
+            "name": "dataAdmin"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[at0020]/value/defining_code/code_string",
+            "name": "codiImmunitzacio"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0132]/value",
+            "name": "codiMarcaComercial"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0150]/value/value",
+            "name": "numLot"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/other_participations/performer",
+            "name": "dadesProfessional"
+        },
+        {
+            "path": "c/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]/items[at0014]/value/defining_code/code_string",
+            "name": "codiCentrePublicador"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/provider/identifiers/id",
+            "name": "origenInformacio"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/ism_transition/current_state",
+            "name": "estat"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.immunisation_list.v0]/items[openEHR-EHR-ACTION.medication.v1]/description[at0017]/items[at0021]",
+            "name": "reason"
+        }
+    ],
+    "rows": [
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "41903134061786263433342433324110446592",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "862210073",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "264431845",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "41903134061786263433342433324110446592",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "salutms.cat"
+                }
+            },
+            "9157c138-4f6d-4d36-b9a3-d20c63304c58::ehrbase.ehrbase.org::1",
+            "2020-11-11T00:00:00+01:00",
+            "46233009",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "716132",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "716132"
+                }
+            },
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "ANA ISABEL",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "COELLO",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "LORENZO",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "308582894",
+                        "type": "2.16.840.1.113883.4.292.10.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044760",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "11826755400040102680553331264599359488",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "989825943",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "264888386",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "11826755400040102680553331264599359488",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "salutms.cat"
+                }
+            },
+            "75add0ae-cee8-4aeb-b260-fa7b36a7de51::ehrbase.ehrbase.org::1",
+            "2021-10-26T19:11:16+02:00",
+            "46233009",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "729302",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "729302"
+                }
+            },
+            "8645B1A",
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "BEGOÑA",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "LOPEZ",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "RODRIGUEZ",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "308335552",
+                        "type": "2.16.840.1.113883.4.292.10.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044760",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-11-09T00:00:00+01:00",
+            "T",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "AGUSTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VALENTI",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-11-09T00:00:00+01:00",
+            "D",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "AGUSTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VALENTI",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-12-20T00:00:00+01:00",
+            "T",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "AGUSTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VALENTI",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-12-20T00:00:00+01:00",
+            "D",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "AGUSTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VALENTI",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2003-05-26T00:00:00+02:00",
+            "T",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "AGUSTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VALENTI",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2003-05-26T00:00:00+02:00",
+            "D",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "AGUSTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VALENTI",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-11-09T00:00:00+01:00",
+            "T",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "VALENTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "AGUSTI",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-11-09T00:00:00+01:00",
+            "D",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "VALENTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "AGUSTI",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-12-20T00:00:00+01:00",
+            "T",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "VALENTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "AGUSTI",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2002-12-20T00:00:00+01:00",
+            "D",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "VALENTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "AGUSTI",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2003-05-26T00:00:00+02:00",
+            "T",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "VALENTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "AGUSTI",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "103980729",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "64707701732011642174312683787080695808",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "-"
+                }
+            },
+            "f64923dd-e7fc-4749-98b7-533e90b906ed::ehrbase.ehrbase.org::1",
+            "2003-05-26T00:00:00+02:00",
+            "D",
+            null,
+            null,
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "VALENTI",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "AGUSTI",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "BASSA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "08092225",
+                        "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "46390175D",
+                        "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MD",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044463",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "70084325799987957476333247631184625664",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1142625511",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "265345370",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "70084325799987957476333247631184625664",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "salutms.cat"
+                }
+            },
+            "8ddd3158-499b-47fb-a147-2c26e1ac839b::ehrbase.ehrbase.org::1",
+            "2022-10-21T12:53:36+02:00",
+            "46233009",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "716024",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "716024"
+                }
+            },
+            "W3E601V",
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "NURIA",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "MARTIN",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "CLEMENTE",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "31705309",
+                        "type": "2.16.840.1.113883.4.292.10.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044760",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            null
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "58953339190388533794157561569246969856",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "948457576",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "SFRISU1530827005VAC0000120210702170050",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "58953339190388533794157561569246969856",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "46.10.1.5"
+                }
+            },
+            "37807fe6-cf70-48dc-8292-7e6b39ffd72a::ehrbase.ehrbase.org::1",
+            "2021-07-02T17:00:50+02:00",
+            "840534001",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "-",
+                "mappings": [
+                    {
+                        "_type": "TERM_MAPPING",
+                        "match": ">",
+                        "target": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "-"
+                            },
+                            "code_string": "69951000122101",
+                            "preferred_term": "commercial_brand"
+                        }
+                    }
+                ],
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "730002"
+                }
+            },
+            "ABY1328",
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "Cristina",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "Bolaño Vendrell",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "41527844X",
+                        "type": "1.3.6.1.4.1.19126.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08027605",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            {
+                "_type": "ELEMENT",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Reason"
+                },
+                "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "-",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "2.16.724.4.9.344"
+                        },
+                        "code_string": "70151000122101"
+                    }
+                },
+                "archetype_node_id": "at0021"
+            }
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "8913875727211048356254010741336571904",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "915486419",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "318694209",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "8913875727211048356254010741336571904",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "salutms.cat"
+                }
+            },
+            "128b0ef7-1e75-4a43-beb3-3129df647835::ehrbase.ehrbase.org::1",
+            "2021-04-17T11:38:29+02:00",
+            "840534001",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "730002",
+                "mappings": [
+                    {
+                        "_type": "TERM_MAPPING",
+                        "match": ">",
+                        "target": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "-"
+                            },
+                            "code_string": "69951000122101",
+                            "preferred_term": "commercial_brand"
+                        }
+                    }
+                ],
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "730002"
+                }
+            },
+            "ABW9941",
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "M. CONCEPCION",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "JUAN",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "ANDRES",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "30813652",
+                        "type": "2.16.840.1.113883.4.292.10.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08029360",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            {
+                "_type": "ELEMENT",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Reason"
+                },
+                "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "-",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "2.16.724.4.9.344"
+                        },
+                        "code_string": "70151000122101"
+                    }
+                },
+                "archetype_node_id": "at0021"
+            }
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "38529439237374381067402996529506549760",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1011157490",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "SFRISU1530827005VAC0000120211216151834",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "38529439237374381067402996529506549760",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "46.10.1.5"
+                }
+            },
+            "157901db-27aa-48b5-8eaf-d10748668cfd::ehrbase.ehrbase.org::1",
+            "2021-12-16T15:18:34+01:00",
+            "840534001",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "-",
+                "mappings": [
+                    {
+                        "_type": "TERM_MAPPING",
+                        "match": ">",
+                        "target": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "-"
+                            },
+                            "code_string": "69931000122106",
+                            "preferred_term": "commercial_brand"
+                        }
+                    }
+                ],
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "730000"
+                }
+            },
+            "016G21A",
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "Maria del Mar",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "Hernandez",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "38841609Z",
+                        "type": "1.3.6.1.4.1.19126.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08027605",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            {
+                "_type": "ELEMENT",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Reason"
+                },
+                "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "-",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "2.16.724.4.9.344"
+                        },
+                        "code_string": "70151000122101"
+                    }
+                },
+                "archetype_node_id": "at0021"
+            }
+        ],
+        [
+            {
+                "_type": "FEEDER_AUDIT",
+                "originating_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "7583350522531586236925009110564339712",
+                        "type": "cpc"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "1185685714",
+                        "type": "cpi"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "265514287",
+                        "type": "center_origin"
+                    }
+                ],
+                "feeder_system_item_ids": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "7583350522531586236925009110564339712",
+                        "type": "cpc"
+                    }
+                ],
+                "originating_system_audit": {
+                    "_type": "FEEDER_AUDIT_DETAILS",
+                    "system_id": "salutms.cat"
+                }
+            },
+            "f3ea5198-886b-4927-8619-ecb4c551f5a7::ehrbase.ehrbase.org::1",
+            "2023-01-20T18:15:23+01:00",
+            "840534001",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "758296",
+                "mappings": [
+                    {
+                        "_type": "TERM_MAPPING",
+                        "match": ">",
+                        "target": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "-"
+                            },
+                            "code_string": "273051000140103",
+                            "preferred_term": "commercial_brand"
+                        }
+                    }
+                ],
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "2.16.840.1.113883.4.292.10.5"
+                    },
+                    "code_string": "758296"
+                }
+            },
+            "GJ5083",
+            {
+                "_type": "PARTY_IDENTIFIED",
+                "name": "LAURA",
+                "identifiers": [
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "VELASCO",
+                        "type": "1.3.6.1.4.1.5734.1.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "QUINTANA",
+                        "type": "1.3.6.1.4.1.5734.1.3"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "308416855",
+                        "type": "2.16.840.1.113883.4.292.10.2"
+                    },
+                    {
+                        "_type": "DV_IDENTIFIER",
+                        "id": "NU",
+                        "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                    }
+                ]
+            },
+            "E08044760",
+            "A",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "active",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "245"
+                }
+            },
+            {
+                "_type": "ELEMENT",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Reason"
+                },
+                "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "-",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "2.16.724.4.9.344"
+                        },
+                        "code_string": "70151000122101"
+                    }
+                },
+                "archetype_node_id": "at0021"
+            }
+        ]
+    ]
+}

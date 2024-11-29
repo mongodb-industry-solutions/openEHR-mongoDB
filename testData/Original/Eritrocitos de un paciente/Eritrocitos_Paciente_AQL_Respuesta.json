@@ -1,0 +1,427 @@
+{
+    "meta": {
+        "_type": "RESULTSET",
+        "_schema_version": "1.0.3",
+        "_created": "2024-11-26T18:06:25.699458901+01:00",
+        "_executed_aql": "SELECT c/uid/value AS compositionId, e/ehr_id/value AS EHRId, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/code_string AS CodiProva, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/value AS DescripcioProva, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/terminology_id/value AS CatalegServTerminologic, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/magnitude AS ValorResultat, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/normal_range/lower/magnitude AS RangMinResultat, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/normal_range/upper/magnitude AS RangMaxResultat, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/name AS ProfesionalName, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/identifiers/id AS ProfesionalIds, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value AS DataObtencio FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1] WHERE (e/ehr_id/value = '6ab04481-1b75-49fd-a272-74dad3280e6e' AND c/context/start_time/value <= '2024-11-04' AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value >= '2012-11-09' AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/identifiers/type MATCHES {'2.16.840.1.113883.4.292.10.2', '1.3.6.1.4.1.5734.1.2'} AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/code_string = '789-8' AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/terminology_id/value = '2.16.840.1.113883.6.1') ORDER BY c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value DESC LIMIT 100",
+        "default-limit": 100,
+        "fetch": 100,
+        "max-fetch": 1000,
+        "max-limit": 1000,
+        "offset": 0,
+        "resultsize": 28
+    },
+    "q": "SELECT c/uid/value AS compositionId, e/ehr_id/value AS EHRId, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/code_string AS CodiProva, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/value AS DescripcioProva, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/terminology_id/value AS CatalegServTerminologic,c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/magnitude AS ValorResultat, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/normal_range/lower/magnitude AS RangMinResultat, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/normal_range/upper/magnitude AS RangMaxResultat, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/name AS ProfesionalName, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/identifiers/id AS ProfesionalIds, c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value as DataObtencio  FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report-result.v1]  where e/ehr_id/value='6ab04481-1b75-49fd-a272-74dad3280e6e' AND  c/context/start_time/value<='2024-11-04' AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value>='2012-11-09' AND  c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/identifiers/type matches {'2.16.840.1.113883.4.292.10.2', '1.3.6.1.4.1.5734.1.2'} AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/code_string='789-8' AND c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/terminology_id/value='2.16.840.1.113883.6.1' ORDER BY c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value desc ",
+    "columns": [
+        {
+            "path": "c/uid/value",
+            "name": "compositionId"
+        },
+        {
+            "path": "e/ehr_id/value",
+            "name": "EHRId"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/code_string",
+            "name": "CodiProva"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/value",
+            "name": "DescripcioProva"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0024]/value/defining_code/terminology_id/value",
+            "name": "CatalegServTerminologic"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/magnitude",
+            "name": "ValorResultat"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/normal_range/lower/magnitude",
+            "name": "RangMinResultat"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.laboratory_test_analyte.v1]/items[at0001]/value/normal_range/upper/magnitude",
+            "name": "RangMaxResultat"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/name",
+            "name": "ProfesionalName"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/other_participations/performer/identifiers/id",
+            "name": "ProfesionalIds"
+        },
+        {
+            "path": "c/content[openEHR-EHR-SECTION.diagnostic_reports.v0]/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1]/data[at0001]/origin/value",
+            "name": "DataObtencio"
+        }
+    ],
+    "rows": [
+        [
+            "4115d70b-93d0-40ab-890b-3903925dc8b9::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.48,
+            3.8,
+            5.8,
+            "MONTSERRAT",
+            "ARIAS",
+            "2018-11-17T00:00:00+01:00"
+        ],
+        [
+            "bad48b37-1e36-46ba-a514-2de78c1610e4::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.08,
+            3.8,
+            5.8,
+            "ESTEFANIA",
+            "GALLEGO",
+            "2018-11-16T00:00:00+01:00"
+        ],
+        [
+            "35d1984c-2518-43e6-88ff-12f70a2d9dab::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            1.89,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-11-07T00:00:00+01:00"
+        ],
+        [
+            "4209d9b4-be19-41a3-9fc5-11b991a3e653::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.33,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-10-24T00:00:00+02:00"
+        ],
+        [
+            "7ae960e0-07f3-4581-a8d2-6c5dd9f4309f::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.15,
+            3.8,
+            5.8,
+            "SANTIAGO",
+            "CASTEJON",
+            "2018-10-15T00:00:00+02:00"
+        ],
+        [
+            "db85e13b-62f6-4ae8-a7b6-ff88e5a39c5f::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.09,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-10-10T00:00:00+02:00"
+        ],
+        [
+            "01cee83c-17fe-46c8-a743-9cf10c639bcf::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.42,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-09-25T00:00:00+02:00"
+        ],
+        [
+            "35e21d35-aaaf-4295-97e5-a94c74f3a8d7::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.45,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-09-12T00:00:00+02:00"
+        ],
+        [
+            "378cb69e-9922-4c66-812c-04960f3aba8d::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.29,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-08-30T00:00:00+02:00"
+        ],
+        [
+            "0192481c-b5c6-46ab-90ef-c10a785cff00::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.3,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-08-16T00:00:00+02:00"
+        ],
+        [
+            "23e1bb2a-0f7b-415d-9f86-b6e2b81e0dec::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.29,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-08-01T00:00:00+02:00"
+        ],
+        [
+            "7eb2de43-4169-4143-8ceb-20b1188e682d::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.38,
+            3.8,
+            5.8,
+            "LLUIS",
+            "RODRIGUEZ",
+            "2018-07-18T00:00:00+02:00"
+        ],
+        [
+            "0982563c-f8fd-464f-8f19-0796cceb5b32::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.33,
+            3.8,
+            5.8,
+            "LLUIS",
+            "RODRIGUEZ",
+            "2018-07-03T00:00:00+02:00"
+        ],
+        [
+            "c7e249ea-9deb-47c3-864e-8a490b9c00bd::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.42,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-06-20T00:00:00+02:00"
+        ],
+        [
+            "0eb8e9ba-41f2-4267-9c2d-9c8904c0f4d2::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.56,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-06-06T00:00:00+02:00"
+        ],
+        [
+            "70e53fe7-8069-45fc-afd3-a0a785c5bbff::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.47,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-05-24T00:00:00+02:00"
+        ],
+        [
+            "6412678d-d00e-42a3-a51e-93b41ab5704d::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.25,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-05-16T00:00:00+02:00"
+        ],
+        [
+            "6d88868d-0649-4a9d-b0aa-3a47a2032871::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            1.83,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-04-25T00:00:00+02:00"
+        ],
+        [
+            "1b41bb21-524b-46fb-a4b1-8c42d4d3bd72::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.02,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-04-10T00:00:00+02:00"
+        ],
+        [
+            "c6d11cde-fac1-4c12-a187-3bc2357bd96c::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            1.72,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-03-28T00:00:00+02:00"
+        ],
+        [
+            "270dc377-91a0-49a1-94e9-c3e58a20c52b::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            1.71,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-03-14T00:00:00+01:00"
+        ],
+        [
+            "aeab22a6-2f94-4bd8-9891-005f60ffa7b8::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.23,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-02-21T00:00:00+01:00"
+        ],
+        [
+            "b8bb49b7-e018-4d8f-9db2-38743d28cf19::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.14,
+            3.8,
+            5.8,
+            "ANA-CAMINO",
+            "SALGADO",
+            "2018-02-01T00:00:00+01:00"
+        ],
+        [
+            "6826756a-a7ff-4bf0-9a3b-e4213240eaa8::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.53,
+            3.8,
+            5.8,
+            "ANNA",
+            "PARCET",
+            "2018-01-22T00:00:00+01:00"
+        ],
+        [
+            "9bf5a216-b1a6-4783-bb1c-6f8e817354de::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.08,
+            3.8,
+            5.8,
+            "ANNA",
+            "PARCET",
+            "2018-01-17T00:00:00+01:00"
+        ],
+        [
+            "c733b77d-ee39-478b-ad99-10ebdcd620ee::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.05,
+            3.8,
+            5.8,
+            "PAULA-CARINA",
+            "GONZALEZ",
+            "2018-01-15T00:00:00+01:00"
+        ],
+        [
+            "0f60242d-f1f6-48ba-a3f3-cf839d29d547::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            2.11,
+            3.8,
+            5.8,
+            "ALEJANDRO",
+            "GARCIA",
+            "2018-01-12T00:00:00+01:00"
+        ],
+        [
+            "35baf268-f207-4a66-87c8-0ffed91456a1::ehrbase.ehrbase.org::1",
+            "6ab04481-1b75-49fd-a272-74dad3280e6e",
+            "789-8",
+            "San-Eritròcits, c",
+            "2.16.840.1.113883.6.1",
+            1.82,
+            3.8,
+            5.8,
+            "FRANCISCO",
+            "SANCHEZ",
+            "2018-01-05T00:00:00+01:00"
+        ]
+    ]
+}

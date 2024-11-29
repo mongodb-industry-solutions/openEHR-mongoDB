@@ -2,6 +2,8 @@ from pymongo import MongoClient
 import json
 import os
 from bson import json_util
+import certifi
+from pymongo import MongoClient
 
 mongo_uri = os.getenv("MONGO_URI")
 folder_path = "enriched_output"
@@ -38,7 +40,7 @@ def upload_documents_to_mongodb(connection_string, database_name, collection_nam
         folder_path (str): Path to the folder containing JSON files.
     """
     try:
-        client = MongoClient(connection_string)
+        client = MongoClient(connection_string, tlsCAFile=certifi.where())
         db = client[database_name]
         collection = db[collection_name]
 

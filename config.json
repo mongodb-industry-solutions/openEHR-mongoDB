@@ -13,5 +13,5 @@
     "ehrID_range": 2000,
     "num_documents": 1000,
     "database_name": "hc_openehr",
-    "collection_name": "compositions"
+    "collection_name": "compositionsV4"
 }
