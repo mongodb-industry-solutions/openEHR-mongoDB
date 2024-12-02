@@ -1,114 +1,165 @@
 import os
 import json
 import shutil
+import xxhash
 
-def extract_paths_and_values(data, current_path="", aql_params=None):
+
+def clear_folder(folder_path):
+    if os.path.exists(folder_path):
+        shutil.rmtree(folder_path)
+    os.makedirs(folder_path)
+
+def shorten_path(path, prefix_to_remove):
     """
-    Recursively extracts all paths and values from the provided JSON object.
-    Args:
-        data (dict): JSON object to extract paths and values from.
-        current_path (str): The current hierarchical path.
-        aql_params (dict): A dictionary to store AQLSearchParams.
-    Returns:
-        dict: A dictionary of extracted paths and values.
+    Shorten a path by removing a specified prefix.
+    
+    :param path: The full path to be shortened.
+    :param prefix_to_remove: The prefix to be removed from the path.
+    :return: The shortened path.
     """
-    if aql_params is None:
-        aql_params = {}
+    if path.startswith(prefix_to_remove):
+        return path[len(prefix_to_remove):]
+    return path
+
+
+def extract_paths(data, parent_path="", paths={}, target_archetype=None):
+    """
+    Recursively extract paths and values from a specific archetype within a composition.
+
+    :param data: The JSON data (composition).
+    :param parent_path: The current path prefix.
+    :param paths: The dictionary to store extracted paths and values.
+    :param target_archetype: The target archetype to filter paths from.
+    :return: A dictionary with paths and values.
+    """
+    if paths is None:
+        paths = {}
 
     if isinstance(data, dict):
+        # Check if the current node matches the target archetype
+        archetype_node_id = data.get("archetype_node_id")
+        if target_archetype and archetype_node_id == target_archetype:
+            # Start extracting paths from this point
+            parent_path = f"[{archetype_node_id}]"
+        elif target_archetype and parent_path == "":
+            # If we haven't reached the target archetype, skip this branch
+            for key, value in data.items():
+                extract_paths(value, parent_path, paths, target_archetype)
+            return paths
+
+        # Use "archetype_node_id" or "name.value" for meaningful path names
+        identifier = data.get("archetype_node_id") or (data.get("name", {}).get("value") if isinstance(data.get("name"), dict) else None)
+        new_parent_path = f"{parent_path}[{identifier}]" if identifier else parent_path
+
         for key, value in data.items():
-            if key in ("_type", "name"):  # Skip metadata keys unless required
-                continue
-            
-            # Construct the new path
-            new_path = f"{current_path}>{key}" if current_path else key
-            
-            if isinstance(value, dict) or isinstance(value, list):
-                extract_paths_and_values(value, new_path, aql_params)
-            else:
-                # Process openEHR objects with archetype_node_id
-                if "archetype_node_id" in data:
-                    node_id = data["archetype_node_id"]
-                    aql_params.setdefault(current_path, {})
-                    aql_params[current_path][node_id] = {
-                        "value": value,
-                        "units": data.get("units"),
-                        "code": data.get("code"),
-                        "magnitude": data.get("magnitude"),
-                    }
-                # Capture nested archetype_id
-                if "archetype_id" in data:
-                    archetype_id = data["archetype_id"].get("value")
-                    aql_params.setdefault(current_path, {})
-                    aql_params[current_path]["archetype_id"] = archetype_id
+            if key not in ["_type", "archetype_node_id", "name"]:
+                new_path = f"{new_parent_path}/{key}" if new_parent_path else key
+                extract_paths(value, new_path, paths, target_archetype)
+
     elif isinstance(data, list):
-        for idx, item in enumerate(data):
-            new_path = f"{current_path}>{idx}" if current_path else str(idx)
-            extract_paths_and_values(item, new_path, aql_params)
+        for item in data:
+            extract_paths(item, parent_path, paths, target_archetype)
 
-    return aql_params
+    else:
+        # Store the value for a leaf node
+        paths[parent_path] = data
+
+    return paths
 
 
-def create_mongo_document(composition):
+def hash_path(path):
+    hash_value = xxhash.xxh64(path).hexdigest()
+    checksum = xxhash.xxh32(path).hexdigest()[:2]
+    return f"{hash_value}{checksum}"
+
+
+def collect_archetypes(data, archetypes):
+    if archetypes is None:
+        archetypes = set()
+
+    if isinstance(data, dict):
+        archetype_id = data.get("archetype_node_id")
+        if archetype_id and archetype_id.startswith("openEHR-") and archetype_id not in archetypes:
+            archetypes.add(archetype_id)
+        for value in data.values():
+            collect_archetypes(value, archetypes)
+    elif isinstance(data, list):
+        for item in data:
+            collect_archetypes(item, archetypes)
+
+
+def parse_composition(composition, use_hashed_paths=False, target_archetype=None):
     """
-    Creates a MongoDB-compatible document with canonicalJSON and AQLSearchParams.
-    Adds important metadata fields to the root level for easier filtering.
-    Args:
-        composition (dict): The original composition JSON object.
-    Returns:
-        dict: A MongoDB-compatible document.
-    """
-    aql_search_params = extract_paths_and_values(composition)
+    Parse a composition and extract key-value pairs for AQL search parameters.
 
-    # Extract composition-level metadata
-    root_data = {
-        "template_id": composition.get("archetype_details", {}).get("template_id", {}).get("value"),
-        "archetype_id": composition.get("archetype_details", {}).get("archetype_id", {}).get("value"),
-        "uid": composition.get("uid", {}).get("value"),
-        "ehr_id": composition.get("_ehrID"),
-        "composition_name": composition.get("name", {}).get("value"),
-        "creation_time": composition.get("context", {}).get("start_time", {}).get("value"),
-        "author": composition.get("composer", {}).get("name"),
+    :param composition: The composition JSON data.
+    :param use_hashed_paths: Whether to use hashed paths for storage.
+    :param target_archetype: The specific archetype to extract paths from.
+    :return: A dictionary of AQL search parameters.
+    """
+    aql_search_params = {
+        "compositionUid": composition.get("uid", {}).get("value"),
+        "compositionTemplate": composition.get("archetype_details", {}).get("template_id", {}).get("value"),
+        "archetypes": [],
+        "paths": {}
     }
 
-    return {
-        **{key: value for key, value in root_data.items() if value is not None},  
-        "canonicalJSON": composition, 
-        "AQLSearchParams": aql_search_params
-    }
+    # Collect all unique relevant archetypes
+    archetypes = set()
+    collect_archetypes(composition, archetypes)
+    aql_search_params["archetypes"] = list(archetypes)
+
+    # Extract paths specifically from the target archetype
+    extracted_paths = extract_paths(composition, target_archetype=target_archetype)
+    prefix_to_remove = f"[{target_archetype}][{target_archetype}]/" if target_archetype else ""
+
+    for path, value in extracted_paths.items():
+        shortened_path = shorten_path(path, prefix_to_remove)
+        final_path = hash_path(shortened_path) if use_hashed_paths else shortened_path
+        aql_search_params["paths"][final_path] = value
+
+    return aql_search_params
 
 
-def process_folder(folder_path, output_folder):
+def process_compositions(input_folder, output_folder, use_hashed_paths=False, target_archetype=None):
     """
-    Processes all JSON files in the specified folder and generates MongoDB-compatible documents.
-    Clears the output folder before saving new files.
-    Args:
-        folder_path (str): Path to the folder containing JSON files.
-        output_folder (str): Path to the folder where processed files will be saved.
-    """
-    # Clear the output folder if it exists
-    if os.path.exists(output_folder):
-        shutil.rmtree(output_folder)  # Deletes the entire folder and its contents
-    os.makedirs(output_folder)  # Recreate the folder
+    Process all composition JSON files in the input folder and save enriched results.
 
-    for filename in os.listdir(folder_path):
+    :param input_folder: Path to the folder containing input composition files.
+    :param output_folder: Path to the folder to save enriched composition files.
+    :param use_hashed_paths: Whether to use hashed paths for storage.
+    :param target_archetype: The specific archetype to extract paths from.
+    """
+    clear_folder(output_folder)
+
+    for filename in os.listdir(input_folder):
         if filename.endswith(".json"):
-            file_path = os.path.join(folder_path, filename)
-            with open(file_path, "r", encoding="utf-8") as file:
-                composition = json.load(file)
-            
-            # Create MongoDB-compatible document
-            mongo_document = create_mongo_document(composition)
-            
-            # Save the processed document
-            output_file_path = os.path.join(output_folder, filename)
-            with open(output_file_path, "w", encoding="utf-8") as output_file:
-                json.dump(mongo_document, output_file, indent=4)
+            input_path = os.path.join(input_folder, filename)
+            output_path = os.path.join(output_folder, filename)
 
-            print(f"Processed and saved: {filename}")
+            with open(input_path, "r", encoding="utf-8") as file:
+                composition_data = json.load(file)
+
+            ehr_id = composition_data.get("_ehrID")
+            enriched_data = {
+                "AQLSearchParams": parse_composition(composition_data, use_hashed_paths, target_archetype),
+                "relatedEntities": {
+                    "ehr_id": ehr_id
+                },
+                "CanonicalJSON": composition_data
+            }
+
+            with open(output_path, "w", encoding="utf-8") as file:
+                json.dump(enriched_data, file, indent=4)
+
+    print(f"Processed all files. Enriched compositions are in '{output_folder}'.")
 
 
-# Example usage
-input_folder = "./output" 
-output_folder = "./enriched_output" 
-process_folder(input_folder, output_folder)
+# Define input and output folders
+input_folder = "output_2"
+output_folder = "output_enriched_complete_2"
+use_hashed_paths = True  # Set to True to use hashed paths
+target_archetype = "openEHR-EHR-COMPOSITION.vaccination_list.v0"
+
+# Process compositions
+process_compositions(input_folder, output_folder, use_hashed_paths, target_archetype)

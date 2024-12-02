@@ -6,7 +6,7 @@ import certifi
 from pymongo import MongoClient
 
 mongo_uri = os.getenv("MONGO_URI")
-folder_path = "enriched_output"
+folder_path = "output_enriched_hashed"
 
 def load_config(config_file):
     """
