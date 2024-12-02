@@ -1,0 +1,62 @@
+Extracted aqlPaths:
+
+/context
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0001]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0002]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0003]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0004]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0032]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0009]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0011]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.xds_metadata.v0]/items[at0010]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0001]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0002]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0023]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0003]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0004]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0005]
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0005]/items[at0011]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0005]/items[at0012]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0005]/items[at0013]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]/items[at0014]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]/items[at0015]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0007]/items[at0016]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0010]
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0010]/items[at0017]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0010]/items[at0018]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0010]/items[at0019]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0009]
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0009]/items[at0020]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0009]/items[at0021]/value
+/context/other_context[at0004]/items[openEHR-EHR-CLUSTER.admin_salut.v0]/items[at0009]/items[at0022]/value
+/context/start_time
+/context/setting
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[at0020,'Immunization item']/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0132]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0150]
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0150]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0150]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[at0003]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[openEHR-EHR-CLUSTER.medication.v2,'Constituent details']
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[openEHR-EHR-CLUSTER.medication.v2]/items[openEHR-EHR-CLUSTER.medication.v2,'Constituent details']/items[at0132]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[at0021]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[at0140]
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[at0140]/items[at0147]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/description[at0017]/items[at0140]/items[at0141]/value
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/time
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/ism_transition
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/language
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/encoding
+/content[openEHR-EHR-SECTION.immunisation_list.v0,'Immunization list']/items[openEHR-EHR-ACTION.medication.v1,'Immunization management']/subject
+/category
+/language
+/territory
+/composer
+
+
