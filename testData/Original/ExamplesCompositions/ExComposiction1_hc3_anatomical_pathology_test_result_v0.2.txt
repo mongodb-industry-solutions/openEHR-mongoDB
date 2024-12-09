@@ -1,0 +1,688 @@
+[
+            {
+                "_type": "COMPOSITION",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "HC3 Anatomical pathology test result"
+                },
+                "archetype_details": {
+                    "archetype_id": {
+                        "value": "openEHR-EHR-COMPOSITION.report-result.v1"
+                    },
+                    "template_id": {
+                        "value": "hc3_anatomical_pathology_test_result_v0.2"
+                    },
+                    "rm_version": "1.0.4"
+                },
+                "feeder_audit": {
+                    "_type": "FEEDER_AUDIT",
+                    "originating_system_item_ids": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "23887162486257279529841783473793138688",
+                            "type": "cpc"
+                        },
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "474609378",
+                            "type": "cpi"
+                        },
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "APAT_18B0003603_1",
+                            "type": "center_origin"
+                        }
+                    ],
+                    "feeder_system_item_ids": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "23887162486257279529841783473793138688",
+                            "type": "cpc"
+                        }
+                    ],
+                    "originating_system_audit": {
+                        "_type": "FEEDER_AUDIT_DETAILS",
+                        "system_id": "santpau.cat"
+                    }
+                },
+                "language": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "ISO_639-1"
+                    },
+                    "code_string": "en"
+                },
+                "territory": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "ISO_3166-1"
+                    },
+                    "code_string": "ES"
+                },
+                "category": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "event",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "openehr"
+                        },
+                        "code_string": "433"
+                    }
+                },
+                "composer": {
+                    "_type": "PARTY_IDENTIFIED",
+                    "identifiers": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "HC3"
+                        }
+                    ]
+                },
+                "context": {
+                    "_type": "EVENT_CONTEXT",
+                    "start_time": {
+                        "_type": "DV_DATE_TIME",
+                        "value": "2024-12-03T09:48:31.35+01:00"
+                    },
+                    "setting": {
+                        "_type": "DV_CODED_TEXT",
+                        "value": "other care",
+                        "defining_code": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "openehr"
+                            },
+                            "code_string": "238"
+                        }
+                    },
+                    "other_context": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Tree"
+                        },
+                        "items": [
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "XDS Metadata"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_anatomical_pathology_test_result_v0.2"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document type"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "Informe anatomia patològica",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "2.16.840.1.113883.4.292.30.13.2"
+                                                },
+                                                "code_string": "APAE"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0003"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Confidentiality code"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "-",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "2.16.840.1.113883.5.25"
+                                                },
+                                                "code_string": "N"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0004"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document_media"
+                                        },
+                                        "value": {
+                                            "_type": "DV_URI",
+                                            "value": "https://xde.rdc.hes.catsalut.intranet.gencat.cat/repositori-documental/document/23887162486257279529841783473793138688"
+                                        },
+                                        "archetype_node_id": "at0010"
+                                    }
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                            },
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Admin Salut"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_anatomical_pathology_test_result_v0.2"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document authorisation date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2018-03-14T12:15:00+01:00"
+                                        },
+                                        "archetype_node_id": "at0001"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document creation date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2018-03-14T12:15:00+01:00"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document publication date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2018-03-14T12:20:02+01:00"
+                                        },
+                                        "archetype_node_id": "at0023"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performing institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Performing centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.30.13.3"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0011"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Performing SA"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.14"
+                                                        },
+                                                        "code_string": "5S053"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0012"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0005"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Publishing institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Publishing centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "092AD512-92B5-11DC-9374-6CDF55D89593"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0014"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Publishing UP"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "-"
+                                                        },
+                                                        "code_string": "00772"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0016"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0007"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Custodial institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Custodial centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "507E76D0-92B5-11DC-A296-A2E155D89593"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0017"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0010"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Requesting institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Requesting centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.30.13.3"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0020"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0009"
+                                    }
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                            }
+                        ],
+                        "archetype_node_id": "at0001"
+                    }
+                },
+                "content": [
+                    {
+                        "_type": "ADMIN_ENTRY",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Episode information"
+                        },
+                        "archetype_details": {
+                            "archetype_id": {
+                                "value": "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0"
+                            },
+                            "template_id": {
+                                "value": "hc3_anatomical_pathology_test_result_v0.2"
+                            },
+                            "rm_version": "1.0.4"
+                        },
+                        "language": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "ISO_639-1"
+                            },
+                            "code_string": "en"
+                        },
+                        "encoding": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "IANA_character-sets"
+                            },
+                            "code_string": "UTF-8"
+                        },
+                        "subject": {
+                            "_type": "PARTY_SELF"
+                        },
+                        "data": {
+                            "_type": "ITEM_TREE",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Item tree"
+                            },
+                            "items": [
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Episode number"
+                                    },
+                                    "value": {
+                                        "_type": "DV_IDENTIFIER",
+                                        "assigner": "-",
+                                        "id": "18B0003603",
+                                        "type": "2.16.724.4.9.10.15"
+                                    },
+                                    "archetype_node_id": "at0014"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Admission date"
+                                    },
+                                    "value": {
+                                        "_type": "DV_DATE_TIME",
+                                        "value": "2010-08-18T01:00:00+02:00"
+                                    },
+                                    "archetype_node_id": "at0004"
+                                }
+                            ],
+                            "archetype_node_id": "at0001"
+                        },
+                        "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0"
+                    },
+                    {
+                        "_type": "OBSERVATION",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Anatomical pathology test result"
+                        },
+                        "archetype_details": {
+                            "archetype_id": {
+                                "value": "openEHR-EHR-OBSERVATION.laboratory_test_result.v1"
+                            },
+                            "template_id": {
+                                "value": "hc3_anatomical_pathology_test_result_v0.2"
+                            },
+                            "rm_version": "1.0.4"
+                        },
+                        "language": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "ISO_639-1"
+                            },
+                            "code_string": "en"
+                        },
+                        "encoding": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "IANA_character-sets"
+                            },
+                            "code_string": "UTF-8"
+                        },
+                        "subject": {
+                            "_type": "PARTY_SELF"
+                        },
+                        "other_participations": [
+                            {
+                                "_type": "PARTICIPATION",
+                                "function": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Performer"
+                                },
+                                "performer": {
+                                    "_type": "PARTY_IDENTIFIED",
+                                    "identifiers": [
+                                        {
+                                            "_type": "DV_IDENTIFIER",
+                                            "id": "170059623",
+                                            "type": "2.16.840.1.113883.4.292.10.2"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "data": {
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Event Series"
+                            },
+                            "origin": {
+                                "_type": "DV_DATE_TIME",
+                                "value": "2018-03-14T12:15:00+01:00"
+                            },
+                            "events": [
+                                {
+                                    "_type": "POINT_EVENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Any event"
+                                    },
+                                    "time": {
+                                        "_type": "DV_DATE_TIME",
+                                        "value": "2018-03-14T12:15:00+01:00"
+                                    },
+                                    "data": {
+                                        "_type": "ITEM_TREE",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Tree"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Anatomical Pathology Test Result"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "Anatomia patològica estructurat",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.30.13.2"
+                                                        },
+                                                        "code_string": "APAE"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0005"
+                                            },
+                                            {
+                                                "_type": "CLUSTER",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Sample detail"
+                                                },
+                                                "archetype_details": {
+                                                    "archetype_id": {
+                                                        "value": "openEHR-EHR-CLUSTER.specimen.v1"
+                                                    },
+                                                    "template_id": {
+                                                        "value": "hc3_anatomical_pathology_test_result_v0.2"
+                                                    },
+                                                    "rm_version": "1.0.4"
+                                                },
+                                                "items": [
+                                                    {
+                                                        "_type": "ELEMENT",
+                                                        "name": {
+                                                            "_type": "DV_TEXT",
+                                                            "value": "Sample number"
+                                                        },
+                                                        "value": {
+                                                            "_type": "DV_IDENTIFIER",
+                                                            "assigner": "-",
+                                                            "id": "A",
+                                                            "type": "2.16.840.1.113883.4.292.30.13.7"
+                                                        },
+                                                        "archetype_node_id": "at0001"
+                                                    },
+                                                    {
+                                                        "_type": "ELEMENT",
+                                                        "name": {
+                                                            "_type": "DV_TEXT",
+                                                            "value": "T code (body area)"
+                                                        },
+                                                        "value": {
+                                                            "_type": "DV_CODED_TEXT",
+                                                            "value": "SNOMED CT",
+                                                            "defining_code": {
+                                                                "_type": "CODE_PHRASE",
+                                                                "terminology_id": {
+                                                                    "_type": "TERMINOLOGY_ID",
+                                                                    "value": "2.16.840.1.113883.6.3"
+                                                                },
+                                                                "code_string": "2739003"
+                                                            }
+                                                        },
+                                                        "archetype_node_id": "at0087"
+                                                    }
+                                                ],
+                                                "archetype_node_id": "openEHR-EHR-CLUSTER.specimen.v1"
+                                            },
+                                            {
+                                                "_type": "CLUSTER",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Anatomical pathology result"
+                                                },
+                                                "archetype_details": {
+                                                    "archetype_id": {
+                                                        "value": "openEHR-EHR-CLUSTER.anatomical_pathology_exam.v0"
+                                                    },
+                                                    "template_id": {
+                                                        "value": "hc3_anatomical_pathology_test_result_v0.2"
+                                                    },
+                                                    "rm_version": "1.0.4"
+                                                },
+                                                "items": [
+                                                    {
+                                                        "_type": "CLUSTER",
+                                                        "name": {
+                                                            "_type": "DV_TEXT",
+                                                            "value": "Anatomical pathology finding"
+                                                        },
+                                                        "items": [
+                                                            {
+                                                                "_type": "ELEMENT",
+                                                                "name": {
+                                                                    "_type": "DV_TEXT",
+                                                                    "value": "R code (result)"
+                                                                },
+                                                                "value": {
+                                                                    "_type": "DV_CODED_TEXT",
+                                                                    "value": "hiperplasia",
+                                                                    "defining_code": {
+                                                                        "_type": "CODE_PHRASE",
+                                                                        "terminology_id": {
+                                                                            "_type": "TERMINOLOGY_ID",
+                                                                            "value": "2.16.840.1.113883.6.96"
+                                                                        },
+                                                                        "code_string": "76197007"
+                                                                    }
+                                                                },
+                                                                "archetype_node_id": "at0010"
+                                                            }
+                                                        ],
+                                                        "archetype_node_id": "at0005"
+                                                    }
+                                                ],
+                                                "archetype_node_id": "openEHR-EHR-CLUSTER.anatomical_pathology_exam.v0"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0003"
+                                    },
+                                    "archetype_node_id": "at0002"
+                                }
+                            ],
+                            "archetype_node_id": "at0001"
+                        },
+                        "archetype_node_id": "openEHR-EHR-OBSERVATION.laboratory_test_result.v1"
+                    }
+                ],
+                "archetype_node_id": "openEHR-EHR-COMPOSITION.report-result.v1"
+            }
+        ]

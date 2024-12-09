@@ -1,0 +1,623 @@
+[
+            {
+                "_type": "COMPOSITION",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "HC3 Imaging test result"
+                },
+                "archetype_details": {
+                    "archetype_id": {
+                        "value": "openEHR-EHR-COMPOSITION.report.v1"
+                    },
+                    "template_id": {
+                        "value": "hc3_imaging_test_result_v0.4"
+                    },
+                    "rm_version": "1.0.4"
+                },
+                "feeder_audit": {
+                    "_type": "FEEDER_AUDIT",
+                    "originating_system_item_ids": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "7056332323303599071932122714402193408",
+                            "type": "cpc"
+                        },
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "724256060",
+                            "type": "cpi"
+                        },
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "6627264",
+                            "type": "center_origin"
+                        }
+                    ],
+                    "feeder_system_item_ids": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "7056332323303599071932122714402193408",
+                            "type": "cpc"
+                        }
+                    ],
+                    "originating_system_audit": {
+                        "_type": "FEEDER_AUDIT_DETAILS",
+                        "system_id": "-"
+                    }
+                },
+                "language": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "ISO_639-1"
+                    },
+                    "code_string": "en"
+                },
+                "territory": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "ISO_3166-1"
+                    },
+                    "code_string": "ES"
+                },
+                "category": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "event",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "openehr"
+                        },
+                        "code_string": "433"
+                    }
+                },
+                "composer": {
+                    "_type": "PARTY_IDENTIFIED",
+                    "identifiers": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "HC3"
+                        }
+                    ]
+                },
+                "context": {
+                    "_type": "EVENT_CONTEXT",
+                    "start_time": {
+                        "_type": "DV_DATE_TIME",
+                        "value": "2024-12-01T20:06:11.916+01:00"
+                    },
+                    "setting": {
+                        "_type": "DV_CODED_TEXT",
+                        "value": "other care",
+                        "defining_code": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "openehr"
+                            },
+                            "code_string": "238"
+                        }
+                    },
+                    "other_context": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Tree"
+                        },
+                        "items": [
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "XDS Metadata"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_imaging_test_result_v0.4"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document type"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "GENOLL A-P I LAT",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "2.16.840.1.113883.4.292.30.13.2"
+                                                },
+                                                "code_string": "01062601"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0003"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Confidentiality code"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "-",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "2.16.840.1.113883.5.25"
+                                                },
+                                                "code_string": "N"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0004"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Class code"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "-",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "-"
+                                                },
+                                                "code_string": "1"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    }
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                            },
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Admin Salut"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_imaging_test_result_v0.4"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document authorisation date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2019-08-15T05:17:20+02:00"
+                                        },
+                                        "archetype_node_id": "at0001"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document creation date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2019-08-15T05:17:20+02:00"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document publication date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2019-08-15T18:43:24+02:00"
+                                        },
+                                        "archetype_node_id": "at0023"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Responsible region"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "Catalunya",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "1.0.3166.2"
+                                                },
+                                                "code_string": "ES-CT"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0004"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performing institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Performing centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0011"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Performing SA"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.14"
+                                                        },
+                                                        "code_string": "5S046"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0012"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Performing UP"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12.6"
+                                                        },
+                                                        "code_string": "00772"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0013"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0005"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Publishing institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Publishing centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0014"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Publishing SA"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.14"
+                                                        },
+                                                        "code_string": "5S046"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0015"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Publishing UP"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12.6"
+                                                        },
+                                                        "code_string": "00772"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0016"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0007"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Custodial institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Custodial centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0017"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Custodial UP"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12.6"
+                                                        },
+                                                        "code_string": "00772"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0019"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0010"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Requesting institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Requesting centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12"
+                                                        },
+                                                        "code_string": "H08000089"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0020"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Requesting SA"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.14"
+                                                        },
+                                                        "code_string": "5S046"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0021"
+                                            },
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Requesting UP"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "2.16.840.1.113883.4.292.10.12.6"
+                                                        },
+                                                        "code_string": "00772"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0022"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0009"
+                                    }
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                            }
+                        ],
+                        "archetype_node_id": "at0001"
+                    }
+                },
+                "content": [
+                    {
+                        "_type": "OBSERVATION",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Imaging examination result"
+                        },
+                        "archetype_details": {
+                            "archetype_id": {
+                                "value": "openEHR-EHR-OBSERVATION.imaging_exam_result.v1"
+                            },
+                            "template_id": {
+                                "value": "hc3_imaging_test_result_v0.4"
+                            },
+                            "rm_version": "1.0.4"
+                        },
+                        "language": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "ISO_639-1"
+                            },
+                            "code_string": "en"
+                        },
+                        "encoding": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "IANA_character-sets"
+                            },
+                            "code_string": "UTF-8"
+                        },
+                        "subject": {
+                            "_type": "PARTY_SELF"
+                        },
+                        "protocol": {
+                            "_type": "ITEM_TREE",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tree"
+                            },
+                            "archetype_node_id": "at0025"
+                        },
+                        "data": {
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Event Series"
+                            },
+                            "origin": {
+                                "_type": "DV_DATE_TIME",
+                                "value": "2019-08-15T05:17:20+02:00"
+                            },
+                            "events": [
+                                {
+                                    "_type": "POINT_EVENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Any event"
+                                    },
+                                    "time": {
+                                        "_type": "DV_DATE_TIME",
+                                        "value": "2019-08-15T05:17:20+02:00"
+                                    },
+                                    "data": {
+                                        "_type": "ITEM_TREE",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Tree"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Study name"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "3942880"
+                                                },
+                                                "archetype_node_id": "at0004"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0003"
+                                    },
+                                    "archetype_node_id": "at0002"
+                                }
+                            ],
+                            "archetype_node_id": "at0001"
+                        },
+                        "archetype_node_id": "openEHR-EHR-OBSERVATION.imaging_exam_result.v1"
+                    }
+                ],
+                "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1"
+            }
+        ]

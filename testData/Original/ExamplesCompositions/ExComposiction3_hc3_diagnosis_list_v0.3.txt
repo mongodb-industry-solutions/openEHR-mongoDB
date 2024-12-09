@@ -1,0 +1,1161 @@
+[
+            {
+                "_type": "COMPOSITION",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "HC3 Diagnosis list"
+                },
+                "archetype_details": {
+                    "archetype_id": {
+                        "value": "openEHR-EHR-COMPOSITION.problem_list.v2"
+                    },
+                    "template_id": {
+                        "value": "hc3_diagnosis_list_v0.3"
+                    },
+                    "rm_version": "1.0.4"
+                },
+                "feeder_audit": {
+                    "_type": "FEEDER_AUDIT",
+                    "originating_system_item_ids": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "51584172404989256535793792584901459968",
+                            "type": "cpc"
+                        },
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "124716091",
+                            "type": "cpi"
+                        },
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "YOUS0840928001_20121101051056",
+                            "type": "center_origin"
+                        }
+                    ],
+                    "feeder_system_item_ids": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "51584172404989256535793792584901459968",
+                            "type": "cpc"
+                        }
+                    ],
+                    "originating_system_audit": {
+                        "_type": "FEEDER_AUDIT_DETAILS",
+                        "system_id": "ura-2"
+                    }
+                },
+                "language": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "ISO_639-1"
+                    },
+                    "code_string": "en"
+                },
+                "territory": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "ISO_3166-1"
+                    },
+                    "code_string": "ES"
+                },
+                "category": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "event",
+                    "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "openehr"
+                        },
+                        "code_string": "433"
+                    }
+                },
+                "composer": {
+                    "_type": "PARTY_IDENTIFIED",
+                    "identifiers": [
+                        {
+                            "_type": "DV_IDENTIFIER",
+                            "id": "HC3"
+                        }
+                    ]
+                },
+                "context": {
+                    "_type": "EVENT_CONTEXT",
+                    "start_time": {
+                        "_type": "DV_DATE_TIME",
+                        "value": "2024-11-26T22:41:09.809+01:00"
+                    },
+                    "setting": {
+                        "_type": "DV_CODED_TEXT",
+                        "value": "other care",
+                        "defining_code": {
+                            "_type": "CODE_PHRASE",
+                            "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "openehr"
+                            },
+                            "code_string": "238"
+                        }
+                    },
+                    "other_context": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Tree"
+                        },
+                        "items": [
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "XDS Metadata"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document type"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "Diagnòstics",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "2.16.840.1.113883.4.292.30.13.2"
+                                                },
+                                                "code_string": "DGN"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0003"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Confidentiality code"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "-",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "2.16.840.1.113883.5.25"
+                                                },
+                                                "code_string": "N"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0004"
+                                    }
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                            },
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Admin Salut"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document authorisation date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2012-11-01T05:10:55+01:00"
+                                        },
+                                        "archetype_node_id": "at0001"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document creation date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2012-11-01T05:10:55+01:00"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Document publication date"
+                                        },
+                                        "value": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2012-11-01T05:10:56+01:00"
+                                        },
+                                        "archetype_node_id": "at0023"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Publishing institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Publishing centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "092AD512-92B5-11DC-9374-6CDF55D89593"
+                                                        },
+                                                        "code_string": "E17008218"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0014"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0007"
+                                    },
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Custodial institution"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Custodial centre"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "-",
+                                                    "defining_code": {
+                                                        "_type": "CODE_PHRASE",
+                                                        "terminology_id": {
+                                                            "_type": "TERMINOLOGY_ID",
+                                                            "value": "507E76D0-92B5-11DC-A296-A2E155D89593"
+                                                        },
+                                                        "code_string": "E17008218"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0017"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0010"
+                                    }
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                            }
+                        ],
+                        "archetype_node_id": "at0006"
+                    }
+                },
+                "content": [
+                    {
+                        "_type": "SECTION",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Diagnosis list"
+                        },
+                        "archetype_details": {
+                            "archetype_id": {
+                                "value": "openEHR-EHR-SECTION.problem_list.v0"
+                            },
+                            "template_id": {
+                                "value": "hc3_diagnosis_list_v0.3"
+                            },
+                            "rm_version": "1.0.4"
+                        },
+                        "items": [
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "ANGEL GUZMAN",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "BARRERO",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "LOPEZ",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117050307",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "10899418V",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "729.5"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2012-10-30T00:00:00+01:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            },
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "ANGEL GUZMAN",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "BARRERO",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "LOPEZ",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117050307",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "10899418V",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "111.0"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2012-10-30T00:00:00+01:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            },
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "ESTHER",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "VILERT",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "GARROFA",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117036526",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "40316440Q",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "681.01"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2011-12-25T00:00:00+01:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Ending Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2012-05-09T00:00:00+02:00"
+                                            },
+                                            "archetype_node_id": "at0030"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            },
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "ANGEL GUZMAN",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "BARRERO",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "LOPEZ",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117050307",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "10899418V",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "111.9"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2011-02-25T00:00:00+01:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            },
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "M.CARMEN",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "GONZALEZ",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "VEGA",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117036122",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "13740254P",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "724.2"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2010-12-13T00:00:00+01:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            },
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "M.CARMEN",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "GONZALEZ",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "VEGA",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117036122",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "13740254P",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "373.12"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2010-10-11T00:00:00+02:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Ending Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2011-09-02T00:00:00+02:00"
+                                            },
+                                            "archetype_node_id": "at0030"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            },
+                            {
+                                "_type": "EVALUATION",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Diagnosis"
+                                },
+                                "archetype_details": {
+                                    "archetype_id": {
+                                        "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                                    },
+                                    "template_id": {
+                                        "value": "hc3_diagnosis_list_v0.3"
+                                    },
+                                    "rm_version": "1.0.4"
+                                },
+                                "language": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "ISO_639-1"
+                                    },
+                                    "code_string": "en"
+                                },
+                                "encoding": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "IANA_character-sets"
+                                    },
+                                    "code_string": "UTF-8"
+                                },
+                                "subject": {
+                                    "_type": "PARTY_SELF"
+                                },
+                                "other_participations": [
+                                    {
+                                        "_type": "PARTICIPATION",
+                                        "function": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Performer"
+                                        },
+                                        "performer": {
+                                            "_type": "PARTY_IDENTIFIED",
+                                            "name": "ANGEL GUZMAN",
+                                            "identifiers": [
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "BARRERO",
+                                                    "type": "1.3.6.1.4.1.5734.1.2"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "LOPEZ",
+                                                    "type": "1.3.6.1.4.1.5734.1.3"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "117050307",
+                                                    "type": "0C34AED0-92B6-11DC-87C8-1DE555D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "10899418V",
+                                                    "type": "DEAD7F0C-92B3-11DC-A7F4-B7D955D89593"
+                                                },
+                                                {
+                                                    "_type": "DV_IDENTIFIER",
+                                                    "id": "MD",
+                                                    "type": "83D02C4E-92B6-11DC-9BB7-10E755D89593"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Tree"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis name"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "-",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "2.16.840.1.113883.6.2.8"
+                                                    },
+                                                    "code_string": "V70.6"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Diagnosis Starting Date"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2010-05-21T00:00:00+02:00"
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+                            }
+                        ],
+                        "archetype_node_id": "openEHR-EHR-SECTION.problem_list.v0"
+                    }
+                ],
+                "archetype_node_id": "openEHR-EHR-COMPOSITION.problem_list.v2"
+            }
+        ]
