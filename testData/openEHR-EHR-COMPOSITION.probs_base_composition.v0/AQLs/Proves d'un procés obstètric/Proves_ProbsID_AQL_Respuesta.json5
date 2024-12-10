@@ -1,0 +1,193 @@
+{
+    "meta": {
+        "_type": "RESULTSET",
+        "_schema_version": "1.0.3",
+        "_created": "2024-12-09T11:49:52.71688104+01:00",
+        "_executed_aql": "SELECT c/context/start_time/value AS start_time, c/content[openEHR-EHR-OBSERVATION.probs_base_observation.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.test_request_screen.v0]/items/name/value AS prova_name, c/content[openEHR-EHR-OBSERVATION.probs_base_observation.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.test_request_screen.v0]/items/value/value AS prova_value, c/archetype_details/template_id/value AS templateId, c/uid/value AS compositionId FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.probs_base_composition.v0] CONTAINS CLUSTER t[openEHR-EHR-CLUSTER.test_request_screen.v0] WHERE (c/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.health_thread.v0]/items[at0003]/value/id = 'PROBS-ccf3f3c9-7524-422d-ba2e-9d62f4b9204b-7' AND e/ehr_id/value = 'ccf3f3c9-7524-422d-ba2e-9d62f4b9204b') ORDER BY c/context/start_time/value DESC LIMIT 100",
+        "default-limit": 100,
+        "fetch": 100,
+        "max-fetch": 1000,
+        "max-limit": 1000,
+        "offset": 0,
+        "resultsize": 22
+    },
+    "q": "SELECT c/context/start_time/value AS start_time, c/content[openEHR-EHR-OBSERVATION.probs_base_observation.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.test_request_screen.v0]/items/name/value AS prova_name, c/content[openEHR-EHR-OBSERVATION.probs_base_observation.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.test_request_screen.v0]/items/value/value AS prova_value, c/archetype_details/template_id/value as templateId, c/uid/value as compositionId FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.probs_base_composition.v0] CONTAINS (CLUSTER t[openEHR-EHR-CLUSTER.test_request_screen.v0]) WHERE c/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.health_thread.v0]/items[at0003]/value/id='PROBS-ccf3f3c9-7524-422d-ba2e-9d62f4b9204b-7' and e/ehr_id/value='ccf3f3c9-7524-422d-ba2e-9d62f4b9204b' ORDER by c/context/start_time/value DESC",
+    "columns": [
+        {
+            "path": "c/context/start_time/value",
+            "name": "start_time"
+        },
+        {
+            "path": "c/content[openEHR-EHR-OBSERVATION.probs_base_observation.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.test_request_screen.v0]/items/name/value",
+            "name": "prova_name"
+        },
+        {
+            "path": "c/content[openEHR-EHR-OBSERVATION.probs_base_observation.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.test_request_screen.v0]/items/value/value",
+            "name": "prova_value"
+        },
+        {
+            "path": "c/archetype_details/template_id/value",
+            "name": "templateId"
+        },
+        {
+            "path": "c/uid/value",
+            "name": "compositionId"
+        }
+    ],
+    "rows": [
+        [
+            "2024-12-05T13:48:28",
+            "Ecografia 3r T_",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "3d13516b-f38a-434b-afc1-2d35067e2abc::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-12-05T13:48:28",
+            "Diagnòstic prenatal invasiu (DPI)_",
+            "Array",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "3d13516b-f38a-434b-afc1-2d35067e2abc::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-12-05T13:48:28",
+            "Cribratge combinat modificat_",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "3d13516b-f38a-434b-afc1-2d35067e2abc::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-12-04T16:53:15",
+            "Cribratge combinat modificat_",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "d9aaaed0-e339-4a62-849a-6a4b94271acf::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-12-04T16:53:15",
+            "Cribratge d'anomalies cromosòmiques 1r T_",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "d9aaaed0-e339-4a62-849a-6a4b94271acf::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-12-04T16:53:15",
+            "Cariotip_",
+            "Qf-PCR",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "d9aaaed0-e339-4a62-849a-6a4b94271acf::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-12-04T16:53:15",
+            "Diagnòstic prenatal invasiu (DPI)_",
+            "Convencional",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS",
+            "d9aaaed0-e339-4a62-849a-6a4b94271acf::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-26T16:49:32",
+            "Cultiu vaginal/rectal",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "8c3e34e4-2376-4e5e-b123-04aa9f96f898::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-26T16:49:32",
+            "Diagnòstic prenatal invasiu (DPI)",
+            "Convencional",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "8c3e34e4-2376-4e5e-b123-04aa9f96f898::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-26T16:49:32",
+            "Ecografia 2n T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "8c3e34e4-2376-4e5e-b123-04aa9f96f898::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-26T10:41:22",
+            "Cariotip",
+            "Array",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "851a7436-ab58-4c34-8311-143838742b87::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-26T10:41:22",
+            "Diagnòstic prenatal invasiu (DPI)",
+            "Convencional",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "851a7436-ab58-4c34-8311-143838742b87::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T12:02:37",
+            "Diagnòstic prenatal invasiu (DPI)",
+            "Amniocentesi",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "34eea75a-92ab-492d-8111-4f0a422ebc59::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T12:02:37",
+            "Cribratge d'anomalies cromosòmiques 1r T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "34eea75a-92ab-492d-8111-4f0a422ebc59::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T12:02:37",
+            "Analítica 3r T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "34eea75a-92ab-492d-8111-4f0a422ebc59::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T12:02:37",
+            "Cariotip",
+            "Qf-PCR",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "34eea75a-92ab-492d-8111-4f0a422ebc59::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T11:35:00",
+            "Ecografia 2n T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "bacd26cd-bde8-471f-884b-6b0a7d83d415::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T11:35:00",
+            "Cribratge d'anomalies cromosòmiques 1r T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "bacd26cd-bde8-471f-884b-6b0a7d83d415::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T11:35:00",
+            "Ecografia addicional",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "bacd26cd-bde8-471f-884b-6b0a7d83d415::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T11:35:00",
+            "Cribratge d'anomalies cromosòmiques 2n T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "bacd26cd-bde8-471f-884b-6b0a7d83d415::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-22T11:35:00",
+            "Ecografia 3r T",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "bacd26cd-bde8-471f-884b-6b0a7d83d415::ehrbase.ehrbase.org::1"
+        ],
+        [
+            "2024-11-21T15:40:04",
+            "Cribratge combinat modificat",
+            true,
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS",
+            "238d2b89-fcf2-4201-b48e-62a113c0120d::ehrbase.ehrbase.org::1"
+        ]
+    ]
+}

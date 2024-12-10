@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "_type": "RESULTSET",
+        "_schema_version": "1.0.3",
+        "_created": "2024-12-09T11:20:55.534982388+01:00",
+        "_executed_aql": "SELECT c/uid/value FROM EHR e CONTAINS COMPOSITION c WHERE (e/ehr_id/value = 'ccf3f3c9-7524-422d-ba2e-9d62f4b9204b' AND c/feeder_audit/feeder_system_item_ids/id = '54192003354873509037262981653235499008') LIMIT 100",
+        "default-limit": 100,
+        "fetch": 100,
+        "max-fetch": 1000,
+        "max-limit": 1000,
+        "offset": 0,
+        "resultsize": 1
+    },
+    "q": "SELECT c/uid/value FROM EHR e CONTAINS COMPOSITION c WHERE e/ehr_id/value=$ehr_id AND c/feeder_audit/feeder_system_item_ids/id=$cpc",
+    "name": "openehr::getbycpc/1.0.0",
+    "columns": [
+        {
+            "path": "c/uid/value",
+            "name": "#0"
+        }
+    ],
+    "rows": [
+        [
+            "cf38c653-98c3-4407-a91b-a8cf2cfb675d::ehrbase.ehrbase.org::1"
+        ]
+    ]
+}

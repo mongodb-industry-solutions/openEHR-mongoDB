@@ -1,0 +1,231 @@
+{
+    "meta": {
+        "_type": "RESULTSET",
+        "_schema_version": "1.0.3",
+        "_created": "2024-12-09T11:28:53.379523686+01:00",
+        "_executed_aql": "SELECT c/context/start_time/value AS dataInici, c/uid/value AS versionedId, c/archetype_details/template_id/value AS templateId FROM EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.probs_base_composition.v0] WHERE (c/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.health_thread.v0]/items[at0003]/value/id = 'PROBS-ccf3f3c9-7524-422d-ba2e-9d62f4b9204b-7' AND e/ehr_id/value = 'ccf3f3c9-7524-422d-ba2e-9d62f4b9204b') ORDER BY c/context/start_time/value DESC LIMIT 100",
+        "default-limit": 100,
+        "fetch": 100,
+        "max-fetch": 1000,
+        "max-limit": 1000,
+        "offset": 0,
+        "resultsize": 40
+    },
+    "q": "SELECT c/context/start_time/value as dataInici, c/uid/value as versionedId, c/archetype_details/template_id/value as templateId from EHR e CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.probs_base_composition.v0] WHERE c/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.health_thread.v0]/items[at0003]/value/id='PROBS-ccf3f3c9-7524-422d-ba2e-9d62f4b9204b-7' AND e/ehr_id/value='ccf3f3c9-7524-422d-ba2e-9d62f4b9204b' ORDER BY c/context/start_time/value DESC",
+    "columns": [
+        {
+            "path": "c/context/start_time/value",
+            "name": "dataInici"
+        },
+        {
+            "path": "c/uid/value",
+            "name": "versionedId"
+        },
+        {
+            "path": "c/archetype_details/template_id/value",
+            "name": "templateId"
+        }
+    ],
+    "rows": [
+        [
+            "2024-12-05T13:48:28",
+            "3d13516b-f38a-434b-afc1-2d35067e2abc::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS"
+        ],
+        [
+            "2024-12-05T13:47:35",
+            "8236f515-438d-4242-8d12-19e458844929::ehrbase.ehrbase.org::1",
+            "PO_Foetus_pregnancy_follow_up_v0.13_FORMULARIS"
+        ],
+        [
+            "2024-12-05T12:12:48",
+            "c54e3198-244d-473f-bc48-7447b302dab0::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-12-05T11:49:39",
+            "27a89d32-f169-4bfa-813b-1f63a39e7645::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-12-05T11:03:25",
+            "9f453a63-02d1-48bf-8bea-9dd6063c5f8e::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS"
+        ],
+        [
+            "2024-12-04T16:54:40",
+            "fcf07f69-5c5f-4882-86b4-a68d83d65adf::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS"
+        ],
+        [
+            "2024-12-04T16:53:15",
+            "d9aaaed0-e339-4a62-849a-6a4b94271acf::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS"
+        ],
+        [
+            "2024-12-03T18:22:44",
+            "87108519-1eba-405c-ae45-85458c954fd6::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.8_FORMULARIS"
+        ],
+        [
+            "2024-12-03T18:01:36",
+            "30b0c0cc-d23a-4912-b91e-62d2ab46d2f7::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.8_FORMULARIS"
+        ],
+        [
+            "2024-12-03T13:50:51",
+            "cb6bf169-71cc-449e-a8fe-5a6ab164b01f::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-12-03T13:50:16",
+            "9f772381-88f8-453c-979b-a2b76f8654b0::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-12-02T18:13:20",
+            "adfb5c02-5055-41aa-a1a5-4ff341bcbf2c::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.8_FORMULARIS"
+        ],
+        [
+            "2024-12-02T15:27:12",
+            "42d651f9-43fe-4807-a1ae-85ede7360ef9::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.8_FORMULARIS"
+        ],
+        [
+            "2024-11-28T16:49:29",
+            "0a728301-c44a-42c6-b19a-33c2a7a9092e::ehrbase.ehrbase.org::1",
+            "PO_Foetus_pregnancy_follow_up_v0.12_FORMULARIS"
+        ],
+        [
+            "2024-11-28T16:49:04",
+            "bbc6e8ea-e26a-44b3-ad53-1267faf33fab::ehrbase.ehrbase.org::1",
+            "PO_Foetus_pregnancy_follow_up_v0.12_FORMULARIS"
+        ],
+        [
+            "2024-11-28T10:18:39",
+            "8a1fb028-01b1-4ef9-8d3f-c2fb5377931e::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-27T17:45:36",
+            "430e7525-5e0d-4e75-b162-ab2c4dee35f9::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-27T16:16:14",
+            "c07cb42b-ca82-44bd-8d64-3fa35edd8adf::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-27T14:36:53",
+            "d01f451f-2b0a-4348-b671-fba50538fd70::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-27T12:03:57",
+            "149b3793-cc89-40c2-a0b2-b78ae3aba235::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-26T16:57:36",
+            "24f92a25-f416-4b28-b414-d501b006db07::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-26T16:49:32",
+            "8c3e34e4-2376-4e5e-b123-04aa9f96f898::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-26T14:02:50",
+            "c2f8c91a-3a20-46be-9e05-1856d73eb61f::ehrbase.ehrbase.org::10",
+            "PO_Care_of_newborn_and_fetus_1-n_during_childbirth_v0.7_FORMULARIS"
+        ],
+        [
+            "2024-11-26T12:04:41",
+            "28a6f37c-a42b-4a8f-9930-8ae2d3ef42d5::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-26T10:41:22",
+            "851a7436-ab58-4c34-8311-143838742b87::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-25T18:03:30",
+            "0eeee753-2fe0-4018-9b1a-118a5f0d69f5::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T15:19:04",
+            "12a8d55c-3541-48ac-9f00-2f8afb98fb3f::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T15:02:40",
+            "69ce9e80-5cd9-4c59-9f9a-5b8299b2b472::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T14:27:31",
+            "bfef95ac-8b6c-4ced-b5d1-3dd3a8280162::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T14:22:15",
+            "503f203a-1921-4bab-a6a2-ce9fd03e3dc9::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T14:04:45",
+            "f0175d99-0388-425f-aafd-1c6512b65d4b::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T13:29:39",
+            "296c164a-62e1-4460-86fa-d86dd3379d47::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T13:25:58",
+            "8c166382-fd4c-4f3d-a317-412cf2a41761::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T12:58:39",
+            "e01cfcb2-c1a2-4f2e-9e1d-412c21b9bc5c::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T12:50:30",
+            "3c78b959-435e-423c-b976-2f27e029be97::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T12:02:37",
+            "34eea75a-92ab-492d-8111-4f0a422ebc59::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T11:35:00",
+            "bacd26cd-bde8-471f-884b-6b0a7d83d415::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-22T10:17:55",
+            "6c04b05d-c742-4632-b50e-1039dfad0346::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-21T15:40:04",
+            "238d2b89-fcf2-4201-b48e-62a113c0120d::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ],
+        [
+            "2024-11-21T13:46:56",
+            "7851e339-fcc0-42ac-82b7-3d093045cdcc::ehrbase.ehrbase.org::1",
+            "PO_Pregnancy_onset_and mother_follow_up_v.0.6_FORMULARIS"
+        ]
+    ]
+}

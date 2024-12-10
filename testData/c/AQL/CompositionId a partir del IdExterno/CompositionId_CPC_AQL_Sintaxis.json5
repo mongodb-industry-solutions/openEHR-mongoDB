@@ -1,0 +1,7 @@
+{
+    "q": "SELECT c
+	FROM EHR e 
+	CONTAINS COMPOSITION c 
+	WHERE e/ehr_id/value=$ehr_id 
+	AND c/feeder_audit/feeder_system_item_ids/id=$cpc"
+}

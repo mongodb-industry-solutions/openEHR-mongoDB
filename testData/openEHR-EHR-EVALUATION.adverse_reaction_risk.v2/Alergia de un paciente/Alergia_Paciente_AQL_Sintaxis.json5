@@ -1,0 +1,12 @@
+{
+    "q":"SELECT 
+c/uid/value AS ID 
+ev/data[at0001]/items[at0133]/value/value AS DATA_INICI 
+ev/data[at0001]/items[at0002]/value AS SUBSTANCIA
+ev/data[at0001]/items[openEHR-EHR-CLUSTER.adverse_reaction_event.v1]/items[at0001]/value AS SUBSTANCIA_ESPECIFICA
+ev/data[at0001]/items[at0120]/value AS CATEGORIA,ev/data[at0001]/items[at0101]/value AS SEVERITAT
+ev/data[at0001]/items[at0063]/value AS NIVELL_CERTESA 
+FROM EHR e 
+CONTAINS COMPOSITION c CONTAINS EVALUATION ev[openEHR-EHR-EVALUATION.adverse_reaction_risk.v2] 
+WHERE e/ehr_id/value= $ehr_id"
+}
