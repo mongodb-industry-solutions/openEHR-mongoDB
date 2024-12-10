@@ -1,0 +1,1187 @@
+{
+    "_type": "COMPOSITION",
+    "name": {
+        "_type": "DV_TEXT",
+        "value": "PO_Pregnancy_onset_and mother_follow_up"
+    },
+    "archetype_details": {
+        "archetype_id": {
+            "value": "openEHR-EHR-COMPOSITION.probs_base_composition.v0"
+        },
+        "template_id": {
+            "value": "PO_Pregnancy_onset_and mother_follow_up_v.0.9_FORMULARIS"
+        },
+        "rm_version": "1.0.4"
+    },
+    "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_639-1"
+        },
+        "code_string": "ca"
+    },
+    "territory": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_3166-1"
+        },
+        "code_string": "ES"
+    },
+    "category": {
+        "_type": "DV_CODED_TEXT",
+        "value": "event",
+        "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+                "_type": "TERMINOLOGY_ID",
+                "value": "openehr"
+            },
+            "code_string": "433"
+        }
+    },
+    "composer": {
+        "_type": "PARTY_IDENTIFIED",
+        "name": "MANUEL IGLESIAS DE LA TORRE"
+    },
+    "context": {
+        "_type": "EVENT_CONTEXT",
+        "start_time": {
+            "_type": "DV_DATE_TIME",
+            "value": "2024-12-10T17:46:27"
+        },
+        "setting": {
+            "_type": "DV_CODED_TEXT",
+            "value": "home",
+            "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "openehr"
+                },
+                "code_string": "225"
+            }
+        },
+        "other_context": {
+            "_type": "ITEM_TREE",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "Item tree"
+            },
+            "items": [
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Dades del professional"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.admin_professional.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Codi identificador"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "55664470X",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0012"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Primer cognom"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "IGLESIAS"
+                            },
+                            "archetype_node_id": "at0009"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tipus d'identificador"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "DNI",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0011"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Nom"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "MANUEL"
+                            },
+                            "archetype_node_id": "at0002"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Segon cognom"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "DE LA TORRE"
+                            },
+                            "archetype_node_id": "at0010"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Descripció Categoria professional"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "metge/essa",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.724.4.9.50.5"
+                                    },
+                                    "code_string": "309343006"
+                                }
+                            },
+                            "archetype_node_id": "at0014"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.admin_professional.v0"
+                },
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Admin Salut"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "CLUSTER",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Institució que realitza"
+                            },
+                            "items": [
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Centre sanitari que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "+ i + 3,  S.C.P.",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12"
+                                            },
+                                            "code_string": "E08586963"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0011"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Entitat Proveïdora que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12.5"
+                                            },
+                                            "code_string": "0208"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0026"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Unitat Proveïdora que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12.6"
+                                            },
+                                            "code_string": "07858"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0013"
+                                }
+                            ],
+                            "archetype_node_id": "at0005"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                },
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Procés clínic"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.health_thread.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "ID procés"
+                            },
+                            "value": {
+                                "_type": "DV_IDENTIFIER",
+                                "id": "PROBS-ccf3f3c9-7524-422d-ba2e-9d62f4b9204b-7"
+                            },
+                            "archetype_node_id": "at0003"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.health_thread.v0"
+                }
+            ],
+            "archetype_node_id": "at0001"
+        }
+    },
+    "content": [
+        {
+            "_type": "OBSERVATION",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "*PROBS_base_observation (en)"
+            },
+            "archetype_details": {
+                "archetype_id": {
+                    "value": "openEHR-EHR-OBSERVATION.probs_base_observation.v0"
+                },
+                "rm_version": "1.0.4"
+            },
+            "language": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "ISO_639-1"
+                },
+                "code_string": "ca"
+            },
+            "encoding": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "IANA_character-sets"
+                },
+                "code_string": "ISO-10646-UTF-1"
+            },
+            "subject": {
+                "_type": "PARTY_SELF"
+            },
+            "provider": {
+                "_type": "PARTY_SELF"
+            },
+            "data": {
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "History"
+                },
+                "origin": {
+                    "_type": "DV_DATE_TIME",
+                    "value": "2024-12-10T17:46:27"
+                },
+                "events": [
+                    {
+                        "_type": "INTERVAL_EVENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Any event"
+                        },
+                        "time": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2022-02-03T04:05:06"
+                        },
+                        "data": {
+                            "_type": "ITEM_TREE",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tree"
+                            },
+                            "items": [
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Dades generals de la dona"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.mother_general_data.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "A"
+                                            },
+                                            "value": {
+                                                "_type": "DV_COUNT",
+                                                "magnitude": 3
+                                            },
+                                            "archetype_node_id": "at0050"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Pais de naixement de la dona"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ALBÀNIA",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/1.0.3166.1.2.1"
+                                                    },
+                                                    "code_string": "008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "L"
+                                            },
+                                            "value": {
+                                                "_type": "DV_COUNT",
+                                                "magnitude": 4
+                                            },
+                                            "archetype_node_id": "at0051"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "P"
+                                            },
+                                            "value": {
+                                                "_type": "DV_COUNT",
+                                                "magnitude": 2
+                                            },
+                                            "archetype_node_id": "at0049"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "T"
+                                            },
+                                            "value": {
+                                                "_type": "DV_COUNT",
+                                                "magnitude": 1
+                                            },
+                                            "archetype_node_id": "at0048"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Rh"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Negatiu",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0046"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0044"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Verificació grup sanguini"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0052"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Grup sanguini"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "O",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0042"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0039"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.mother_general_data.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Observacions"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.comment.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Observacions"
+                                            },
+                                            "value": {
+                                                "_type": "DV_TEXT",
+                                                "value": ""
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.comment.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Dades generals per al seguiment de l'embaràs de la mare"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.mothers_pregnancy_follow_up_general_data.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Trastorns digestius"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Nàusees",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_16"
+                                                    },
+                                                    "code_string": "422587007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0102"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Trastorns dermatològics"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Pruïja",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_18"
+                                                    },
+                                                    "code_string": "418363000"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0123"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Valoració professional"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Risc alt",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0135"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0129"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Classificació risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Risc molt alt",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0131"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Número de cigarretes"
+                                            },
+                                            "value": {
+                                                "_type": "DV_COUNT",
+                                                "magnitude": 20
+                                            },
+                                            "archetype_node_id": "at0128"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERM: Edat molt precoç (menys de 15 anys)",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0014"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERM: Dona d'edat avançada (≥ 40 anys)",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0015"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "EBR: Alçada baixa (menys de 145 cm)",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "EBR: IMC inadequat (<18,5 o >30)",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0010"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERM: Condicions socioeconòmiques desfavorables",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0026"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERA: Obesitat mòrbida (IMC >40)",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0037"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERM: Risc cardiovascular OMS II",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0035"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERA: Endocrinopatia",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0044"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERMA: Diabetis Mellitus tipus 1 o 2",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0057"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERA: Antecedents d'avortaments (2 o més)",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0038"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERM: Antecedents de patologia placentària",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0023"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERA: Anomalia cromosòmica prèvia",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0040"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERMA: Mort perinatal prèvia",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0056"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERMA: Malformació fetal confirmada",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0063"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "ERM: Control insuficient o no adequat de la gestant",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0025"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Risc embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "EBR: Embaràs no desitjat",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0011"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Processos dolorosos"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "FIE",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_17"
+                                                    },
+                                                    "code_string": "162052001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0109"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Processos dolorosos"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "FID",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_17"
+                                                    },
+                                                    "code_string": "162051008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0109"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tabac"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0126"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Deixar de fumar"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": false
+                                            },
+                                            "archetype_node_id": "at0127"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.mothers_pregnancy_follow_up_general_data.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Escales"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.escales.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "CLUSTER",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "AUDIT embaràs"
+                                            },
+                                            "items": [
+                                                {
+                                                    "_type": "ELEMENT",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "AUDIT embaràs puntuació"
+                                                    },
+                                                    "value": {
+                                                        "_type": "DV_COUNT",
+                                                        "magnitude": 0
+                                                    },
+                                                    "archetype_node_id": "at0002"
+                                                },
+                                                {
+                                                    "_type": "ELEMENT",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "AUDIT embaràs interpretació"
+                                                    },
+                                                    "value": {
+                                                        "_type": "DV_CODED_TEXT",
+                                                        "value": "No consum alcohol",
+                                                        "defining_code": {
+                                                            "_type": "CODE_PHRASE",
+                                                            "terminology_id": {
+                                                                "_type": "TERMINOLOGY_ID",
+                                                                "value": "FORMULARIS_HES_15830"
+                                                            },
+                                                            "code_string": "at0009"
+                                                        }
+                                                    },
+                                                    "archetype_node_id": "at0019"
+                                                }
+                                            ],
+                                            "archetype_node_id": "at0018"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.escales.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Activitats educatives"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.activitats_educatius_seguiment_mare.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu d'alarma durant l'embaràs"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Prevenció i informació d'estat emocional"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Informació sobre les exploracions i proves complementàries"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Control de les visites. Freqüència dels controls. Lloc"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Actuació davant molèsties"
+                                            },
+                                            "value": {
+                                                "_type": "DV_BOOLEAN",
+                                                "value": true
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.activitats_educatius_seguiment_mare.v0"
+                                }
+                            ],
+                            "archetype_node_id": "at0003"
+                        },
+                        "width": {
+                            "_type": "DV_DURATION",
+                            "value": "PT42H"
+                        },
+                        "math_function": {
+                            "_type": "DV_CODED_TEXT",
+                            "value": "minimum",
+                            "defining_code": {
+                                "_type": "CODE_PHRASE",
+                                "terminology_id": {
+                                    "_type": "TERMINOLOGY_ID",
+                                    "value": "openehr"
+                                },
+                                "code_string": "145"
+                            }
+                        },
+                        "archetype_node_id": "at0002"
+                    }
+                ],
+                "archetype_node_id": "at0001"
+            },
+            "archetype_node_id": "openEHR-EHR-OBSERVATION.probs_base_observation.v0"
+        }
+    ],
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.probs_base_composition.v0",
+    "uid": {
+        "_type": "OBJECT_VERSION_ID",
+        "value": "65c0a73f-d96a-494e-8a9b-fdc9e7520944::ehrbase.ehrbase.org::1"
+    }
+}

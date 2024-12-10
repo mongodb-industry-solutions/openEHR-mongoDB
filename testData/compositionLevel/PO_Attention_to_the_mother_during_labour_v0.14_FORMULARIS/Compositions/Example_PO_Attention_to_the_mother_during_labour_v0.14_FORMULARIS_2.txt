@@ -1,0 +1,2552 @@
+{
+    "_type": "COMPOSITION",
+    "name": {
+        "_type": "DV_TEXT",
+        "value": "PO_Attention_to_the_mother_during_labour"
+    },
+    "archetype_details": {
+        "archetype_id": {
+            "value": "openEHR-EHR-COMPOSITION.probs_base_composition.v0"
+        },
+        "template_id": {
+            "value": "PO_Attention_to_the_mother_during_labour_v0.14_FORMULARIS"
+        },
+        "rm_version": "1.0.4"
+    },
+    "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_639-1"
+        },
+        "code_string": "ca"
+    },
+    "territory": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_3166-1"
+        },
+        "code_string": "DE"
+    },
+    "category": {
+        "_type": "DV_CODED_TEXT",
+        "value": "event",
+        "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+                "_type": "TERMINOLOGY_ID",
+                "value": "openehr"
+            },
+            "code_string": "433"
+        }
+    },
+    "composer": {
+        "_type": "PARTY_IDENTIFIED",
+        "name": "Max Mustermann"
+    },
+    "context": {
+        "_type": "EVENT_CONTEXT",
+        "start_time": {
+            "_type": "DV_DATE_TIME",
+            "value": "2022-02-03T04:05:06"
+        },
+        "end_time": {
+            "_type": "DV_DATE_TIME",
+            "value": "2022-02-03T04:05:06"
+        },
+        "setting": {
+            "_type": "DV_CODED_TEXT",
+            "value": "home",
+            "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "openehr"
+                },
+                "code_string": "225"
+            }
+        },
+        "other_context": {
+            "_type": "ITEM_TREE",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "Item tree"
+            },
+            "items": [
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "XDS Metadata"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Especialitat autor"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0001"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tipus document"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0002"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "*Document type (en)"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0003"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Codi de condifencialitat"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0004"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "*Health care facility type (en)"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0032"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Codi especialitat clínica"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0009"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Codi de l'event"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0011"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Document multimedia"
+                            },
+                            "value": {
+                                "_type": "DV_URI",
+                                "value": "https://www.example.com/sample"
+                            },
+                            "archetype_node_id": "at0010"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.xds_metadata.v0"
+                },
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "*Admin Salut (en)"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Data autorització document"
+                            },
+                            "value": {
+                                "_type": "DV_DATE_TIME",
+                                "value": "2022-02-03T04:05:06"
+                            },
+                            "archetype_node_id": "at0001"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Data creació document"
+                            },
+                            "value": {
+                                "_type": "DV_DATE_TIME",
+                                "value": "2022-02-03T04:05:06"
+                            },
+                            "archetype_node_id": "at0002"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Data publicació document"
+                            },
+                            "value": {
+                                "_type": "DV_DATE_TIME",
+                                "value": "2022-02-03T04:05:06"
+                            },
+                            "archetype_node_id": "at0023"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Règim econòmic"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0003"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Regió sanitària"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0004"
+                        },
+                        {
+                            "_type": "CLUSTER",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Institució que realitza"
+                            },
+                            "items": [
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Entitat Proveïdora que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12.5",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12.5"
+                                            },
+                                            "code_string": "3781"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0026"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Unitat Proveïdora que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology 'https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12.6' available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12.6"
+                                            },
+                                            "code_string": "12154"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0013"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Centre sanitari que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology 'https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12' available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.840.1.113883.4.292.10.12"
+                                            },
+                                            "code_string": "E08762753"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0011"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Servei Assistencial que realitza"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0012"
+                                }
+                            ],
+                            "archetype_node_id": "at0005"
+                        },
+                        {
+                            "_type": "CLUSTER",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Institució publicadora"
+                            },
+                            "items": [
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Entitat Proveïdora publicadora"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0027"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Unitat Proveïdora publicadora"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0016"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Centre sanitari publicador"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0014"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Servei Assistencial publicador"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0015"
+                                }
+                            ],
+                            "archetype_node_id": "at0007"
+                        },
+                        {
+                            "_type": "CLUSTER",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Institució custòdia"
+                            },
+                            "items": [
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Entitat Proveïdora custòdia"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0028"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Unitat Proveïdora custòdia"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0019"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Centre sanitari custodi"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0017"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Servei Assistencial custodi"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0018"
+                                }
+                            ],
+                            "archetype_node_id": "at0010"
+                        },
+                        {
+                            "_type": "CLUSTER",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Institució sol·licitant"
+                            },
+                            "items": [
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Entitat Proveïdora sol·licitant"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0029"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Unitat Proveïdora sol·licitant"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0022"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Centre sanitari sol·licitant"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "42"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0020"
+                                },
+                                {
+                                    "_type": "ELEMENT",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Servei Assistencial sol·licitant"
+                                    },
+                                    "value": {
+                                        "_type": "DV_CODED_TEXT",
+                                        "value": "No example for termínology null available",
+                                        "defining_code": {
+                                            "_type": "CODE_PHRASE",
+                                            "terminology_id": {
+                                                "_type": "TERMINOLOGY_ID",
+                                                "value": "external"
+                                            },
+                                            "code_string": "SC"
+                                        }
+                                    },
+                                    "archetype_node_id": "at0021"
+                                }
+                            ],
+                            "archetype_node_id": "at0009"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.admin_salut.v0"
+                },
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Dades del professional"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.admin_professional.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Codi Categoria professional"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology 'https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.724.4.9.50.5' available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.724.4.9.50.5"
+                                    },
+                                    "code_string": "SC"
+                                }
+                            },
+                            "archetype_node_id": "at0013"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Descripció Categoria professional"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology 'https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.724.4.9.50.5' available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "https://preproduccio.fhir.tst.hes.catsalut.intranet.gencat.cat/fhir/CodeSystem/2.16.724.4.9.50.5"
+                                    },
+                                    "code_string": "SC"
+                                }
+                            },
+                            "archetype_node_id": "at0014"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Nom"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0002"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Primer cognom"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0009"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Segon cognom"
+                            },
+                            "value": {
+                                "_type": "DV_TEXT",
+                                "value": "Lorem ipsum"
+                            },
+                            "archetype_node_id": "at0010"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Codi identificador"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0012"
+                        },
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tipus d'identificador"
+                            },
+                            "value": {
+                                "_type": "DV_CODED_TEXT",
+                                "value": "No example for termínology null available",
+                                "defining_code": {
+                                    "_type": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "external"
+                                    },
+                                    "code_string": "42"
+                                }
+                            },
+                            "archetype_node_id": "at0011"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.admin_professional.v0"
+                },
+                {
+                    "_type": "CLUSTER",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Procés clínic"
+                    },
+                    "archetype_details": {
+                        "archetype_id": {
+                            "value": "openEHR-EHR-CLUSTER.health_thread.v0"
+                        },
+                        "rm_version": "1.0.4"
+                    },
+                    "items": [
+                        {
+                            "_type": "ELEMENT",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "ID procés"
+                            },
+                            "value": {
+                                "_type": "DV_IDENTIFIER",
+                                "id": "PROBS_MODELATGE"
+                            },
+                            "archetype_node_id": "at0003"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-CLUSTER.health_thread.v0"
+                }
+            ],
+            "archetype_node_id": "at0001"
+        },
+        "health_care_facility": {
+            "_type": "PARTY_IDENTIFIED",
+            "name": "DOE, John"
+        }
+    },
+    "content": [
+        {
+            "_type": "OBSERVATION",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "*PROBS_base_observation (en)"
+            },
+            "archetype_details": {
+                "archetype_id": {
+                    "value": "openEHR-EHR-OBSERVATION.probs_base_observation.v0"
+                },
+                "rm_version": "1.0.4"
+            },
+            "language": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "ISO_639-1"
+                },
+                "code_string": "ca"
+            },
+            "encoding": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "IANA_character-sets"
+                },
+                "code_string": "UTF-8"
+            },
+            "workflow_id": {
+                "_type": "OBJECT_REF",
+                "namespace": "unknown",
+                "type": "ANY",
+                "id": {
+                    "_type": "GENERIC_ID",
+                    "value": "41ebf9f4-0d10-313a-9ad9-b916ed868c0c",
+                    "scheme": "scheme"
+                }
+            },
+            "subject": {
+                "_type": "PARTY_SELF"
+            },
+            "guideline_id": {
+                "_type": "OBJECT_REF",
+                "namespace": "unknown",
+                "type": "ANY",
+                "id": {
+                    "_type": "GENERIC_ID",
+                    "value": "69dfdd10-0e41-3d31-9eda-583ddc2a9ae9",
+                    "scheme": "scheme"
+                }
+            },
+            "data": {
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "History"
+                },
+                "origin": {
+                    "_type": "DV_DATE_TIME",
+                    "value": "2022-02-03T04:05:06"
+                },
+                "events": [
+                    {
+                        "_type": "INTERVAL_EVENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Any event"
+                        },
+                        "time": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2022-02-03T04:05:06"
+                        },
+                        "data": {
+                            "_type": "ITEM_TREE",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tree"
+                            },
+                            "items": [
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Resum embaràs"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.birth_summary_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Data del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2022-02-03T04:05:06"
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Durada de l'embaràs en el moment del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DURATION",
+                                                "value": "PT0S"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Lloc del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Hospital",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_1"
+                                                    },
+                                                    "code_string": "52668009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0005"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tipus de part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Eutòcic",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_2"
+                                                    },
+                                                    "code_string": "289259007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de la inducció"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "GCP - gestació cronològicament prolongada",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_4"
+                                                    },
+                                                    "code_string": "90968009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tipus d'inducció al part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Amniotomia",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_5"
+                                                    },
+                                                    "code_string": "408818004"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.birth_summary_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Transfer"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.transfer_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Data de l’alta hospitalària"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2022-02-03T04:05:06"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.transfer_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Símptomes"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.symptoms_attention_to_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Amniorrexi"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Espontània",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_9"
+                                                    },
+                                                    "code_string": "169734005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Valoració del sagnat"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "500-1000ml",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Febre intrapart"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "No",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_14"
+                                                    },
+                                                    "code_string": "260385009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Hores amniorrexi fins al part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DURATION",
+                                                "value": "PT0S"
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.symptoms_attention_to_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Gestió de la pacient"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.management_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Deslliurament"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Dirigit",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_13"
+                                                    },
+                                                    "code_string": "391892008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Posició durant l'expulsiu"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "4 grapes",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_11"
+                                                    },
+                                                    "code_string": "422431001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Indicació de la tocoquirúrgica"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Abreujament expulsiu",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_6"
+                                                    },
+                                                    "code_string": "237001001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de cesària electiva"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Cesària iterativa",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_7"
+                                                    },
+                                                    "code_string": "200151008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de cesària intrapart"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "DPF - desproporció fetus-pelvis",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_8"
+                                                    },
+                                                    "code_string": "25749005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0005"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Revisió canal de part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Íntegre",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_17"
+                                                    },
+                                                    "code_string": "11163003"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Inici del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Espontani",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_3"
+                                                    },
+                                                    "code_string": "84457005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Part a l'aigua"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Si",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_12"
+                                                    },
+                                                    "code_string": "373066001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0008"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.management_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Medicació"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.medication_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Profilaxi ATB"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Si",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_15"
+                                                    },
+                                                    "code_string": "373066001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tractament analgèsic durant el part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Relaxació",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_10"
+                                                    },
+                                                    "code_string": "64299003"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu profilaxi ATB"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "SGB - Streptococcus agalactiae  del grup B",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_16"
+                                                    },
+                                                    "code_string": "36611000122109"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.medication_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Observacions"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.comment.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Observacions part mare"
+                                            },
+                                            "value": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Lorem ipsum"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.comment.v0"
+                                }
+                            ],
+                            "archetype_node_id": "at0003"
+                        },
+                        "width": {
+                            "_type": "DV_DURATION",
+                            "value": "PT42H"
+                        },
+                        "math_function": {
+                            "_type": "DV_CODED_TEXT",
+                            "value": "minimum",
+                            "defining_code": {
+                                "_type": "CODE_PHRASE",
+                                "terminology_id": {
+                                    "_type": "TERMINOLOGY_ID",
+                                    "value": "openehr"
+                                },
+                                "code_string": "145"
+                            }
+                        },
+                        "archetype_node_id": "at0002"
+                    },
+                    {
+                        "_type": "POINT_EVENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Any event"
+                        },
+                        "time": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2022-02-03T04:05:06"
+                        },
+                        "data": {
+                            "_type": "ITEM_TREE",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tree"
+                            },
+                            "items": [
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Resum embaràs"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.birth_summary_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Data del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2022-02-03T04:05:06"
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Durada de l'embaràs en el moment del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DURATION",
+                                                "value": "PT0S"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Lloc del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Hospital",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_1"
+                                                    },
+                                                    "code_string": "52668009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0005"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tipus de part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Eutòcic",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_2"
+                                                    },
+                                                    "code_string": "289259007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de la inducció"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "GCP - gestació cronològicament prolongada",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_4"
+                                                    },
+                                                    "code_string": "90968009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tipus d'inducció al part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Amniotomia",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_5"
+                                                    },
+                                                    "code_string": "408818004"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.birth_summary_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Transfer"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.transfer_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Data de l’alta hospitalària"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2022-02-03T04:05:06"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.transfer_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Símptomes"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.symptoms_attention_to_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Amniorrexi"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Espontània",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_9"
+                                                    },
+                                                    "code_string": "169734005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Valoració del sagnat"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "500-1000ml",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Febre intrapart"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "No",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_14"
+                                                    },
+                                                    "code_string": "260385009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Hores amniorrexi fins al part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DURATION",
+                                                "value": "PT0S"
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.symptoms_attention_to_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Gestió de la pacient"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.management_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Deslliurament"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Dirigit",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_13"
+                                                    },
+                                                    "code_string": "391892008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Posició durant l'expulsiu"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "4 grapes",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_11"
+                                                    },
+                                                    "code_string": "422431001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Indicació de la tocoquirúrgica"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Abreujament expulsiu",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_6"
+                                                    },
+                                                    "code_string": "237001001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de cesària electiva"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Cesària iterativa",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_7"
+                                                    },
+                                                    "code_string": "200151008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de cesària intrapart"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "DPF - desproporció fetus-pelvis",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_8"
+                                                    },
+                                                    "code_string": "25749005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0005"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Revisió canal de part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Íntegre",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_17"
+                                                    },
+                                                    "code_string": "11163003"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Inici del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Espontani",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_3"
+                                                    },
+                                                    "code_string": "84457005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Part a l'aigua"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Si",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_12"
+                                                    },
+                                                    "code_string": "373066001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0008"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.management_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Medicació"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.medication_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Profilaxi ATB"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Si",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_15"
+                                                    },
+                                                    "code_string": "373066001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tractament analgèsic durant el part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Relaxació",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_10"
+                                                    },
+                                                    "code_string": "64299003"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu profilaxi ATB"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "SGB - Streptococcus agalactiae  del grup B",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_16"
+                                                    },
+                                                    "code_string": "36611000122109"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.medication_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Observacions"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.comment.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Observacions part mare"
+                                            },
+                                            "value": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Lorem ipsum"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.comment.v0"
+                                }
+                            ],
+                            "archetype_node_id": "at0003"
+                        },
+                        "archetype_node_id": "at0002"
+                    },
+                    {
+                        "_type": "INTERVAL_EVENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Any event"
+                        },
+                        "time": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2022-02-03T04:05:06"
+                        },
+                        "data": {
+                            "_type": "ITEM_TREE",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Tree"
+                            },
+                            "items": [
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Resum embaràs"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.birth_summary_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Data del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2022-02-03T04:05:06"
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Durada de l'embaràs en el moment del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DURATION",
+                                                "value": "PT0S"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Lloc del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Hospital",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_1"
+                                                    },
+                                                    "code_string": "52668009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0005"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tipus de part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Eutòcic",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_2"
+                                                    },
+                                                    "code_string": "289259007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de la inducció"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "GCP - gestació cronològicament prolongada",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_4"
+                                                    },
+                                                    "code_string": "90968009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tipus d'inducció al part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Amniotomia",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_5"
+                                                    },
+                                                    "code_string": "408818004"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.birth_summary_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Transfer"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.transfer_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Data de l’alta hospitalària"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DATE_TIME",
+                                                "value": "2022-02-03T04:05:06"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.transfer_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Símptomes"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.symptoms_attention_to_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Amniorrexi"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Espontània",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_9"
+                                                    },
+                                                    "code_string": "169734005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Valoració del sagnat"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "500-1000ml",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "local"
+                                                    },
+                                                    "code_string": "at0007"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Febre intrapart"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "No",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_14"
+                                                    },
+                                                    "code_string": "260385009"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Hores amniorrexi fins al part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_DURATION",
+                                                "value": "PT0S"
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.symptoms_attention_to_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Gestió de la pacient"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.management_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Deslliurament"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Dirigit",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_13"
+                                                    },
+                                                    "code_string": "391892008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Posició durant l'expulsiu"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "4 grapes",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_11"
+                                                    },
+                                                    "code_string": "422431001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Indicació de la tocoquirúrgica"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Abreujament expulsiu",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_6"
+                                                    },
+                                                    "code_string": "237001001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de cesària electiva"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Cesària iterativa",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_7"
+                                                    },
+                                                    "code_string": "200151008"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu de cesària intrapart"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "DPF - desproporció fetus-pelvis",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_8"
+                                                    },
+                                                    "code_string": "25749005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0005"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Revisió canal de part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Íntegre",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_17"
+                                                    },
+                                                    "code_string": "11163003"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0006"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Inici del part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Espontani",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_3"
+                                                    },
+                                                    "code_string": "84457005"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0007"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Part a l'aigua"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Si",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_12"
+                                                    },
+                                                    "code_string": "373066001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0008"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.management_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Medicació"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.medication_attention_mother.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Profilaxi ATB"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Si",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_15"
+                                                    },
+                                                    "code_string": "373066001"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tractament analgèsic durant el part"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "Relaxació",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_10"
+                                                    },
+                                                    "code_string": "64299003"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0002"
+                                        },
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Motiu profilaxi ATB"
+                                            },
+                                            "value": {
+                                                "_type": "DV_CODED_TEXT",
+                                                "value": "SGB - Streptococcus agalactiae  del grup B",
+                                                "defining_code": {
+                                                    "_type": "CODE_PHRASE",
+                                                    "terminology_id": {
+                                                        "_type": "TERMINOLOGY_ID",
+                                                        "value": "SNOMED_CT_16"
+                                                    },
+                                                    "code_string": "36611000122109"
+                                                }
+                                            },
+                                            "archetype_node_id": "at0003"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.medication_attention_mother.v0"
+                                },
+                                {
+                                    "_type": "CLUSTER",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Observacions"
+                                    },
+                                    "archetype_details": {
+                                        "archetype_id": {
+                                            "value": "openEHR-EHR-CLUSTER.comment.v0"
+                                        },
+                                        "rm_version": "1.0.4"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Observacions part mare"
+                                            },
+                                            "value": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Lorem ipsum"
+                                            },
+                                            "archetype_node_id": "at0001"
+                                        }
+                                    ],
+                                    "archetype_node_id": "openEHR-EHR-CLUSTER.comment.v0"
+                                }
+                            ],
+                            "archetype_node_id": "at0003"
+                        },
+                        "width": {
+                            "_type": "DV_DURATION",
+                            "value": "PT42H"
+                        },
+                        "math_function": {
+                            "_type": "DV_CODED_TEXT",
+                            "value": "minimum",
+                            "defining_code": {
+                                "_type": "CODE_PHRASE",
+                                "terminology_id": {
+                                    "_type": "TERMINOLOGY_ID",
+                                    "value": "openehr"
+                                },
+                                "code_string": "145"
+                            }
+                        },
+                        "archetype_node_id": "at0002"
+                    }
+                ],
+                "archetype_node_id": "at0001"
+            },
+            "archetype_node_id": "openEHR-EHR-OBSERVATION.probs_base_observation.v0"
+        }
+    ],
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.probs_base_composition.v0",
+    "uid": {
+        "_type": "OBJECT_VERSION_ID",
+        "value": "85ebd6a1-0994-4add-9d34-3a099449c2c0::ehrbase.ehrbase.org::2"
+    }
+}
