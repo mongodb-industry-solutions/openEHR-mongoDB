@@ -8,7 +8,7 @@ def analyze_compositions(base_dir):
         for folder in dirs:
             # Each folder inside compositionLevel represents a composition
             composition_path = os.path.join(root, folder)
-            if root.endswith('compositionLevel'):
+            if root.lower().endswith('compositionlevel'):  # Case-insensitive check
                 if folder not in compositions:
                     compositions[folder] = {
                         'AQL': [],
@@ -24,22 +24,24 @@ def analyze_compositions(base_dir):
 
                 # Dive into the folder to count and categorize files
                 for subroot, subdirs, subfiles in os.walk(composition_path):
-                    if subroot.endswith('AQLS'):  # Add directory names under AQLS
-                        compositions[folder]['AQL'].extend(subdirs)
+                    folder_name = os.path.basename(subroot).lower()  # Normalize folder name to lowercase
+                    if 'aql' in folder_name:  # Check if AQLS folder is present
+                        compositions[folder]['AQL'].extend(subdirs)  # Add subdirectory names as AQL titles
                     for subfile in subfiles:
-                        if subroot.endswith('Archetypes'):  # Archetypes are .adl files
-                            if subfile.endswith('.adl'):
+                        file_name = subfile.lower()  # Normalize file name to lowercase
+                        if 'archetype' in folder_name:  # Check for Archetypes folder
+                            if file_name.endswith('.adl'):  # Archetypes are .adl files
                                 compositions[folder]['Archetypes'].append(os.path.splitext(subfile)[0])
-                        elif subroot.endswith('Templates'):  # Templates categorize by extension
-                            if subfile.endswith('.opt'):
+                        elif 'template' in folder_name:  # Check for Templates folder
+                            if file_name.endswith('.opt'):
                                 compositions[folder]['Templates']['opt'].append(subfile)
-                            elif subfile.endswith('.json'):
+                            elif file_name.endswith('.json'):
                                 compositions[folder]['Templates']['json'].append(subfile)
-                        elif subroot.endswith('Compositions'):  # Count instances in Compositions
+                        elif 'composition' in folder_name:  # Check for Compositions folder
                             compositions[folder]['Composition Instances'] += 1
 
                     # Check if WebTemplate folder is present
-                    if 'WebTemplates' in subdirs:
+                    if any('webtemplate' in d.lower() for d in subdirs):  # Case-insensitive check
                         compositions[folder]['Templates']['webtemplate'] = 'Yes'
 
                 # Sort the results alphabetically

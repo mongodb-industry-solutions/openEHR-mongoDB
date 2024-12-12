@@ -1,0 +1,112 @@
+{
+    "meta": {
+        "_type": "RESULTSET",
+        "_schema_version": "1.0.3",
+        "_created": "2024-12-09T11:09:33.26165225+01:00",
+        "_executed_aql": "SELECT c/uid/value AS ID, ev/data[at0001]/items[at0133]/value/value AS DATA_INICI, ev/data[at0001]/items[at0002]/value AS SUBSTANCIA, ev/data[at0001]/items[openEHR-EHR-CLUSTER.adverse_reaction_event.v1]/items[at0001]/value AS SUBSTANCIA_ESPECIFICA, ev/data[at0001]/items[at0120]/value AS CATEGORIA, ev/data[at0001]/items[at0101]/value AS SEVERITAT, ev/data[at0001]/items[at0063]/value AS NIVELL_CERTESA FROM EHR e CONTAINS COMPOSITION c CONTAINS EVALUATION ev[openEHR-EHR-EVALUATION.adverse_reaction_risk.v2] WHERE e/ehr_id/value = 'ccf3f3c9-7524-422d-ba2e-9d62f4b9204b' LIMIT 100",
+        "default-limit": 100,
+        "fetch": 100,
+        "max-fetch": 1000,
+        "max-limit": 1000,
+        "offset": 0,
+        "resultsize": 1
+    },
+    "q": "SELECT c/uid/value AS ID, ev/data[at0001]/items[at0133]/value/value AS DATA_INICI, ev/data[at0001]/items[at0002]/value AS SUBSTANCIA, ev/data[at0001]/items[openEHR-EHR-CLUSTER.adverse_reaction_event.v1]/items[at0001]/value AS SUBSTANCIA_ESPECIFICA, ev/data[at0001]/items[at0120]/value AS CATEGORIA,ev/data[at0001]/items[at0101]/value AS SEVERITAT, ev/data[at0001]/items[at0063]/value AS NIVELL_CERTESA FROM EHR e CONTAINS COMPOSITION c CONTAINS EVALUATION ev[openEHR-EHR-EVALUATION.adverse_reaction_risk.v2] WHERE e/ehr_id/value= $ehr_id",
+    "name": "imm::airbyehrid/2.0.0",
+    "columns": [
+        {
+            "path": "c/uid/value",
+            "name": "ID"
+        },
+        {
+            "path": "ev/data[at0001]/items[at0133]/value/value",
+            "name": "DATA_INICI"
+        },
+        {
+            "path": "ev/data[at0001]/items[at0002]/value",
+            "name": "SUBSTANCIA"
+        },
+        {
+            "path": "ev/data[at0001]/items[openEHR-EHR-CLUSTER.adverse_reaction_event.v1]/items[at0001]/value",
+            "name": "SUBSTANCIA_ESPECIFICA"
+        },
+        {
+            "path": "ev/data[at0001]/items[at0120]/value",
+            "name": "CATEGORIA"
+        },
+        {
+            "path": "ev/data[at0001]/items[at0101]/value",
+            "name": "SEVERITAT"
+        },
+        {
+            "path": "ev/data[at0001]/items[at0063]/value",
+            "name": "NIVELL_CERTESA"
+        }
+    ],
+    "rows": [
+        [
+            "af65c710-5b82-40d7-8458-1ba6e365b923::ehrbase.ehrbase.org::1",
+            "2022-02-03T04:05:06",
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "No example for termínology null available",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "external"
+                    },
+                    "code_string": "42"
+                }
+            },
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "No example for termínology null available",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "external"
+                    },
+                    "code_string": "42"
+                }
+            },
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "Al·lèrgia medicamentosa",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local_terms"
+                    },
+                    "code_string": "416098002"
+                }
+            },
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "Lleu",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local_terms"
+                    },
+                    "code_string": "255604002"
+                }
+            },
+            {
+                "_type": "DV_CODED_TEXT",
+                "value": "Unconfirmed",
+                "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                    },
+                    "code_string": "at0064"
+                }
+            }
+        ]
+    ]
+}

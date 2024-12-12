@@ -49,17 +49,41 @@ def generate_corona_composition(schema):
     return schema
 
 def generate_immunization_composition(schema):
-    schema["_id"] = str(ObjectId())
-    schema["_ehrID"] = assign_ehr_id()
+    """
+    This function generates synthetic immunization composition data based on a predefined schema.
+    """
+    schema["_id"] = str(ObjectId())  # Assign a unique MongoDB ObjectId
+    schema["_ehrID"] = assign_ehr_id()  # Assign a random EHR ID
+
+    # Randomize context start time
     schema["context"]["start_time"]["value"] = faker.date_time_this_year().isoformat()
+
+    # Randomize defining_code for "other_context"
+    schema["context"]["other_context"]["items"][1]["items"][3]["items"][0]["value"]["defining_code"]["code_string"] = faker.random_element(
+        ["H43001830", "L33001834", "K43221830"]
+    )
+
+    # Randomize composer identifier
     schema["composer"]["identifiers"][0]["id"] = faker.uuid4()
+
+    # Randomize time in the description
     schema["content"][0]["items"][0]["time"]["value"] = faker.date_time_this_year().isoformat()
+
+    # Randomize performer identifiers
+    schema["content"][0]["items"][0]["other_participations"][0]["performer"]["identifiers"][2]["id"] = faker.random_element(
+        ["43086845K", "33001834T", "43221834T", "43676845K", "39999834T", "55521834T"]
+    )
+
+    # Randomize immunization item (vaccine type)
     schema["content"][0]["items"][0]["description"]["items"][0]["value"]["value"] = faker.random_element(
         ["COVID-19 Vaccine", "Hepatitis B Vaccine", "Flu Vaccine"]
     )
+
+    # Randomize manufacturer name
     schema["content"][0]["items"][0]["description"]["items"][1]["items"][0]["value"]["value"] = faker.random_element(
         ["Pfizer", "Moderna", "AstraZeneca"]
     )
+
     return schema
 
 def generate_laboratory_composition(schema):

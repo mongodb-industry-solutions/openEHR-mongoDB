@@ -1,0 +1,8 @@
+"SELECT c/context/start_time/value as dataInici, 
+c/uid/value as versionedId,
+c/archetype_details/template_id/value as templateId
+from EHR e 
+CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.probs_base_composition.v0]
+WHERE c/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.health_thread.v0]/items[at0003]/value/id=$probsId 
+AND e/ehr_id/value=$ehrId
+ORDER BY c/context/start_time/value DESC"
