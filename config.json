@@ -1,10 +1,42 @@
 {
-    "schemas": {
-        "Immunization_composition": "schemas/Ex1_Composition_Immunitzacio.txt"
+    "compositions": {
+        "Immunization": {
+            "instances": [
+                "SyntheticData/Ex1_Composition_Immunitzacio.json",
+                "SyntheticData/Ex2_Composition_Immunitzacio.json",
+                "SyntheticData/Ex3_Composition_Immunitzacio.json",
+                "SyntheticData/ExComposition1_HC3 Immunization List v0.5.json",
+                "SyntheticData/ExComposition2_HC3 Immunization List v0.5.json",
+                "SyntheticData/ExComposition3_HC3 Immunization List v0.5.json"
+            ],
+            "DEFAULT_NUM_PERFORMERS": 300,
+            "DEFAULT_TIME_YEARS": 3,
+            "DEFAULT_VACCINATION_PROBABILITIES": {
+                "1": 0.5,
+                "2": 0.3,
+                "3": 0.2
+            },
+            "DEFAULT_VACCINES": [
+                {
+                    "value": "Grip",
+                    "code_string": "46233009"
+                },
+                {
+                    "value": "vacuna antidiftèrica",
+                    "code_string": "428214002"
+                },
+                {
+                    "value": "Tifoidea inyectable[TYPHIM VI]",
+                    "code_string": "89428009"
+                }
+            ],
+            "DEFAULT_HOSPITAL_CODES": 10
+        }
     },
     "ehrID_suffix": "ehr_",
     "ehrID_range": 2000,
-    "num_documents": 999000,
+    "num_documents": 100,
     "database_name": "hc_openehr_testMQL",
-    "collection_name": "compositions"
+    "collection_name": "immunizationsOriginal",
+    "batch_size": 1000
 }
