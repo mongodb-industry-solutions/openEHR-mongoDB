@@ -1,0 +1,180 @@
+2024-12-18 11:12:54,032 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:54,032 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:54,032 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:54,033 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:54,033 - DEBUG - Verifying response
+2024-12-18 11:12:54,033 - DEBUG - Verifying response
+2024-12-18 11:12:54,033 - DEBUG - Responder is issuer
+2024-12-18 11:12:54,033 - DEBUG - Responder is issuer
+2024-12-18 11:12:54,040 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:12:54,040 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:12:54,611 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:54,611 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:54,611 - DEBUG - Verifying response
+2024-12-18 11:12:54,611 - DEBUG - Responder is issuer
+2024-12-18 11:12:54,611 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:12:54,611 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:54,611 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:54,611 - DEBUG - Verifying response
+2024-12-18 11:12:54,611 - DEBUG - Responder is issuer
+2024-12-18 11:12:54,611 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:12:54,618 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:54,618 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:54,618 - DEBUG - Verifying response
+2024-12-18 11:12:54,618 - DEBUG - Responder is issuer
+2024-12-18 11:12:54,618 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:12:54,900 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:54,900 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:54,900 - DEBUG - Verifying response
+2024-12-18 11:12:54,900 - DEBUG - Responder is issuer
+2024-12-18 11:12:54,900 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:12:56,580 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:12:56,580 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:12:56,580 - DEBUG - Verifying response
+2024-12-18 11:12:56,581 - DEBUG - Responder is issuer
+2024-12-18 11:12:56,581 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:13:44,370 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:13:44,370 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:13:44,370 - DEBUG - Verifying response
+2024-12-18 11:13:44,370 - DEBUG - Responder is issuer
+2024-12-18 11:13:44,371 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:16,137 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:16,138 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:16,140 - DEBUG - Verifying response
+2024-12-18 11:17:16,140 - DEBUG - Responder is issuer
+2024-12-18 11:17:16,141 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:16,142 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:16,142 - DEBUG - Verifying response
+2024-12-18 11:17:16,142 - DEBUG - Responder is issuer
+2024-12-18 11:17:16,154 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:16,155 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:16,757 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:16,757 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:16,757 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:16,757 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:16,757 - DEBUG - Verifying response
+2024-12-18 11:17:16,757 - DEBUG - Verifying response
+2024-12-18 11:17:16,758 - DEBUG - Responder is issuer
+2024-12-18 11:17:16,758 - DEBUG - Responder is issuer
+2024-12-18 11:17:16,758 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:16,758 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:16,772 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:16,772 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:16,772 - DEBUG - Verifying response
+2024-12-18 11:17:16,772 - DEBUG - Responder is issuer
+2024-12-18 11:17:16,773 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:16,917 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:16,917 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:16,917 - DEBUG - Verifying response
+2024-12-18 11:17:16,917 - DEBUG - Responder is issuer
+2024-12-18 11:17:16,917 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:17:18,915 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:17:18,915 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:17:18,915 - DEBUG - Verifying response
+2024-12-18 11:17:18,915 - DEBUG - Responder is issuer
+2024-12-18 11:17:18,915 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:36,350 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:36,352 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:36,352 - DEBUG - Verifying response
+2024-12-18 11:27:36,352 - DEBUG - Responder is issuer
+2024-12-18 11:27:36,355 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:36,355 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:36,355 - DEBUG - Verifying response
+2024-12-18 11:27:36,355 - DEBUG - Responder is issuer
+2024-12-18 11:27:36,377 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:36,377 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:36,836 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:36,836 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:36,836 - DEBUG - Verifying response
+2024-12-18 11:27:36,836 - DEBUG - Responder is issuer
+2024-12-18 11:27:36,836 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:36,998 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:36,998 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:36,998 - DEBUG - Verifying response
+2024-12-18 11:27:36,998 - DEBUG - Responder is issuer
+2024-12-18 11:27:36,999 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:37,013 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:37,014 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:37,014 - DEBUG - Verifying response
+2024-12-18 11:27:37,014 - DEBUG - Responder is issuer
+2024-12-18 11:27:37,015 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:37,016 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:37,016 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:37,016 - DEBUG - Verifying response
+2024-12-18 11:27:37,016 - DEBUG - Responder is issuer
+2024-12-18 11:27:37,017 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:27:38,773 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:27:38,773 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:27:38,774 - DEBUG - Verifying response
+2024-12-18 11:27:38,774 - DEBUG - Responder is issuer
+2024-12-18 11:27:38,774 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:23,004 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:23,004 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:23,005 - DEBUG - Verifying response
+2024-12-18 11:28:23,005 - DEBUG - Responder is issuer
+2024-12-18 11:28:23,020 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:23,026 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:23,026 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:23,026 - DEBUG - Verifying response
+2024-12-18 11:28:23,026 - DEBUG - Responder is issuer
+2024-12-18 11:28:23,027 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:23,589 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:23,589 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:23,590 - DEBUG - Verifying response
+2024-12-18 11:28:23,590 - DEBUG - Responder is issuer
+2024-12-18 11:28:23,590 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:23,616 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:23,616 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:23,616 - DEBUG - Verifying response
+2024-12-18 11:28:23,616 - DEBUG - Responder is issuer
+2024-12-18 11:28:23,616 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:23,627 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:23,627 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:23,627 - DEBUG - Verifying response
+2024-12-18 11:28:23,628 - DEBUG - Responder is issuer
+2024-12-18 11:28:23,628 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:23,777 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:23,778 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:23,778 - DEBUG - Verifying response
+2024-12-18 11:28:23,778 - DEBUG - Responder is issuer
+2024-12-18 11:28:23,779 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:28:24,851 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:28:24,852 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:28:24,852 - DEBUG - Verifying response
+2024-12-18 11:28:24,852 - DEBUG - Responder is issuer
+2024-12-18 11:28:24,853 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:29,162 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:29,163 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:29,163 - DEBUG - Verifying response
+2024-12-18 11:35:29,163 - DEBUG - Responder is issuer
+2024-12-18 11:35:29,174 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:29,293 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:29,294 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:29,296 - DEBUG - Verifying response
+2024-12-18 11:35:29,297 - DEBUG - Responder is issuer
+2024-12-18 11:35:29,298 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:29,756 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:29,756 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:29,756 - DEBUG - Verifying response
+2024-12-18 11:35:29,756 - DEBUG - Responder is issuer
+2024-12-18 11:35:29,757 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:29,757 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:29,757 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:29,757 - DEBUG - Verifying response
+2024-12-18 11:35:29,757 - DEBUG - Responder is issuer
+2024-12-18 11:35:29,757 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:29,893 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:29,894 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:29,894 - DEBUG - Verifying response
+2024-12-18 11:35:29,894 - DEBUG - Responder is issuer
+2024-12-18 11:35:29,894 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:31,941 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:31,941 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:31,941 - DEBUG - Verifying response
+2024-12-18 11:35:31,941 - DEBUG - Responder is issuer
+2024-12-18 11:35:31,941 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2024-12-18 11:35:34,013 - DEBUG - Peer stapled an OCSP response
+2024-12-18 11:35:34,014 - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2024-12-18 11:35:34,014 - DEBUG - Verifying response
+2024-12-18 11:35:34,014 - DEBUG - Responder is issuer
+2024-12-18 11:35:34,017 - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>

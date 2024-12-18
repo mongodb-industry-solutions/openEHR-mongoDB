@@ -1,0 +1,101 @@
+{
+    "mappings": {
+      "dynamic": false,
+      "fields": {
+        "CanonicalJSON": {
+          "fields": {
+            "content": {
+              "fields": {
+                "archetype_node_id": {
+                  "type": "token"
+                },
+                "items": {
+                  "fields": {
+                    "archetype_node_id": {
+                      "type": "token"
+                    },
+                    "other_participations": {
+                      "fields": {
+                        "performer": {
+                          "fields": {
+                            "identifiers": {
+                              "fields": {
+                                "id": {
+                                  "type": "token"
+                                }
+                              },
+                              "type": "embeddedDocuments"
+                            }
+                          },
+                          "type": "document"
+                        }
+                      },
+                      "type": "embeddedDocuments"
+                    },
+                    "time": {
+                      "fields": {
+                        "value": {
+                          "type": "date"
+                        }
+                      },
+                      "type": "document"
+                    }
+                  },
+                  "type": "embeddedDocuments"
+                }
+              },
+              "type": "embeddedDocuments"
+            },
+            "context": {
+              "fields": {
+                "other_context": {
+                  "fields": {
+                    "items": {
+                      "fields": {
+                        "archetype_node_id": {
+                          "type": "token"
+                        },
+                        "items": {
+                          "fields": {
+                            "archetype_node_id": {
+                              "type": "token"
+                            },
+                            "items": {
+                              "fields": {
+                                "archetype_node_id": {
+                                  "type": "token"
+                                },
+                                "value": {
+                                  "fields": {
+                                    "defining_code": {
+                                      "fields": {
+                                        "code_string": {
+                                          "type": "token"
+                                        }
+                                      },
+                                      "type": "document"
+                                    }
+                                  },
+                                  "type": "document"
+                                }
+                              },
+                              "type": "embeddedDocuments"
+                            }
+                          },
+                          "type": "embeddedDocuments"
+                        }
+                      },
+                      "type": "embeddedDocuments"
+                    }
+                  },
+                  "type": "document"
+                }
+              },
+              "type": "document"
+            }
+          },
+          "type": "document"
+        }
+      }
+    }
+  }
